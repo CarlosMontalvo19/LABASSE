@@ -1,1985 +1,3114 @@
-
-*{margin:0 ; padding :0;}
-
-body {font-family:Arial, Helvetica, sans-serif;}
-
-#fondohome { position: absolute; z-index:-1; width: 100%; height:923px ;background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ; background-size: cover;}
-
-#fondo1 { position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:923px;
-	 
-	 background: url(../img/gramo.jpg) ;
-	 background-size: cover; 
-	 animation-name: fondo1; 
-	 animation-duration: 30s;
-	 animation-iteration-count:infinite;
-	 
-	 
-	 -moz-animation-name: fondo1; 
-	 moz-animation-duration: 30s;
-	 -moz-animation-iteration-count:infinite;
-	 -webkit-animation-name: fondo1; 
-	 -webkit-animation-duration: 30s;
-	 -webkit-animation-iteration-count:infinite;
-	 -ms-animation-name: fondo1; 
-	 -ms-animation-duration: 30s;
-	 -ms-animation-iteration-count:infinite;
-	 -o-animation-name: fondo1; 
-	 -o-animation-duration: 30s;
-	 -o-animation-iteration-count:infinite;
+ *{
+    margin:0 ;
+     padding :0;
 }
-
-@keyframes fondo1{
-	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	99%{opacity: 0;}
+ body {
+    font-family:Arial, Helvetica, sans-serif;
 }
- 
-@-moz-keyframes fondo1{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
-} 
- 
-@-o-keyframes fondo1{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
-} 
-@-webkit-keyframes fondo1{ 
- 	1%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ #fondohome {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px ;
+    background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+     background-size: cover;
 }
-
-header {
-	width: 15%;
-	background: rgba(52,0,101,0.8);
-	display: inline-block;
-	vertical-align: top;
+ #fondo1 {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px;
+     background: url(../img/gramo.jpg) ;
+     background-size: cover;
+     animation-name: fondo1;
+     animation-duration: 30s;
+     animation-iteration-count:infinite;
+     -moz-animation-name: fondo1;
+     moz-animation-duration: 30s;
+     -moz-animation-iteration-count:infinite;
+     -webkit-animation-name: fondo1;
+     -webkit-animation-duration: 30s;
+     -webkit-animation-iteration-count:infinite;
+     -ms-animation-name: fondo1;
+     -ms-animation-duration: 30s;
+     -ms-animation-iteration-count:infinite;
+     -o-animation-name: fondo1;
+     -o-animation-duration: 30s;
+     -o-animation-iteration-count:infinite;
 }
-
-section {
-	width: 82%;
-	display: inline-block;
-	}
-
-footer {
-	width:100%;
-	background: rgba(52,0,101,0.8);
-	position: relative;
+ @keyframes fondo1{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     99%{
+        opacity: 0;
+    }
 }
-
-footer #margen_footer {
-	padding: 20px;
+ @-moz-keyframes fondo1{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
 }
-
-.separador { clear:both ;}
-header #logo { margin-top:89px; margin-left:13px;}
-header nav {width:140px;  }
-header nav #menu { margin-left: 30px; }
-header nav ul {margin-top:91px; margin-right:40px;list-style:none; margin-bottom: 252px;}
-header nav ul li {  margin-top:70px; }
-header nav ul a { background:url(../img/vineta_03.png);background-repeat:no-repeat;background-position:left;text-decoration:none;color:#43FF24;font-size:14px; margin:5px; padding: 10px;}
-header nav ul li a:hover, header nav ul li a:active {background: rgba(0,0,0,0.9);border-radius:2px;}
-
-section #ultimos{width:325px; float:left; background: rgba(0,0,0,0.8); margin-top:220px;box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;}
-	section #ultimos:hover {transform: scale(1.25,1.25);}
-section #ultimos h2 {font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #ultimos #ult1{ width:200px; margin-left:11px;}
-section #ultimos #ult1 #imgul1 { background:url(../img/Pendulun.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat; margin-bottom:15px;}
-section #ultimos #ult1  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #ultimos #ult1  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #ultimos #ult1 audio { margin-bottom:10px;}
-
-section #ultimos #ult2{ width:200px; margin-left:11px;}
-section #ultimos #ult2 #imgul2 { background:url(../img/Netsky.png); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #ultimos #ult2  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #ultimos #ult2  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #ultimos #ult2 audio { margin-bottom:10px;}
-
-section #ultimos #ult3{ width:200px; margin-left:11px; margin-bottom:20px;}
-section #ultimos #ult3 #imgul3 { background:url(../img/DJFresh.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #ultimos #ult3  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #ultimos #ult3  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #ultimos #ult3 audio { margin-bottom:10px;}
-
-section #maratones{width:325px; float:left; background: rgba(0,0,0,0.8); margin-top:364px; margin-left:30px; padding-left:11px;
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;} 
-	section #maratones:hover {transform: scale(1.25,1.25);}
-section #maratones #mara1  { margin-bottom:55px;}
-section #maratones #mara1 #imgmara{  background:url(../img/STEALTH.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #maratones  h2{font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #maratones #mara2 #imgmara1{  background:url(../img/fabric.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #maratones h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #maratones p { font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px; padding-right:15px;}
-section #maratones audio { margin-bottom:40px;}
-section #djs {width:315px; float: right; background: rgba(0,0,0,0.8); margin-top:352px; margin-left:30px; padding-left:11px; padding-bottom:25px; 
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;} 
-	section #djs:hover{transform: scale(1.25,1.25);}
-section #djs h2{font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #djs #dj1 { margin-bottom:-66px ; float:left; width:250px; }
-section #djs #dj1 #imgdj1{background:url(../img/icicle.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px }
-section #djs #dj1 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px; margin-top:25px; }
-section #djs #dj2 { margin-bottom:10px ; float:left; margin-top:65px;width:250px; }
-section #djs #dj2 #imgdj2{background:url(../img/xlarge.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px }
-section #djs #dj2 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px; margin-top:25px;}
-section #djs #dj3 { margin-bottom:95px;width:250px;  }
-section #djs #dj3 #imgdj3{background: url(../img/phonics.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat; }
-section #djs #dj3 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:10px; margin-top:25px; float:left;}
-
-
-
-footer #redes { width:140px; margin-left:20px; display: inline-block;}
-footer #redes #rd1{background:url(../img/twit.png); width:30px; height:30px; background-size:100% 100%; margin-right:10px;  display: inline-block;}
-footer #redes #rd2{background:url(../img/face.png); width:30px; height:30px; background-size:100% 100%;margin-right:10px; display: inline-block;}
-footer #redes #rd3{background:url(../img/insta.png); width:30px; height:30px; background-size:100% 100%;margin-right:20px; display: inline-block;}
-footer #copy {display: inline-block; width: 350px; position: absolute; left: 50%; margin-left: -175px; text-align: center;}
-footer #copy  p {font-size:10px; font-style:normal; color:rgba(255,255,255,0.7); margin-top:10px;; float:left; }
-footer #log{background:url(../img/logo.jpg); width:110px; height:30px; background-size: 100% 100%;  position: absolute; right: 20px; top: 20px;}
-
-/*eventos*/
-
-#fondoeve { position: absolute; z-index:-1; width: 100%; height:923px ;background: url(../img/disco-vin.jpg)  ; background-size: 100% 100%;}
-
-#fondo2{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:923px;
-	 
-	 background: url(../img/fondo2.jpg)  ;
-	 background-size: cover; 
-	 animation-name: fondo1; 
-	 animation-duration: 30s;
-	 animation-iteration-count:infinite;
-	 
-	 -webkit-animation-name: fondo1; 
-	 -webkit-animation-duration: 30s;
-	 -webkit-animation-iteration-count:infinite;
-	 -moz-animation-name: fondo1; 
-	 -moz-animation-duration: 30s;
-	 -moz-animation-iteration-count:infinite;
-	 -ms-animation-name: fondo1; 
-	 -ms-animation-duration: 30s;
-	 -ms-animation-iteration-count:infinite;
-	 -o-animation-name: fondo1; 
-	 -o-animation-duration: 30s;
-	 -o-animation-iteration-count:infinite;
-	 
+ @-o-keyframes fondo1{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
 }
-
-@keyframes fondo2{
-	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ @-webkit-keyframes fondo1{
+     1%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
 }
- 
-@-moz-keyframes fondo2{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ header {
+     width: 15%;
+     background: rgba(52,0,101,0.8);
+     display: inline-block;
+     vertical-align: top;
 }
-
-@-o-keyframes fondo2{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section {
+     width: 82%;
+     display: inline-block;
 }
-
-@-webkit-keyframes fondo2{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ footer {
+     width:100%;
+     background: rgba(52,0,101,0.8);
+     position: relative;
 }
-
-section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{ width:185px ; 
- background: rgba(0,0,0,0.8);
-  float: left ; 
-   margin-top: 223px;
-    padding:15px; 
-	box-shadow:0px 0px 15px rgba(0,0,0,1);
-	transition: all 0.5s; 
-	position: relative; }
-section #contenedor #evento1:hover,section #contenedor #evento2:hover,section #contenedor #evento3:hover,section #contenedor #evento4:hover {
-	transform: scale(1.25,1.25);}
-section #contenedor #evento1 #imgeve1{ 
-width:147px; 
-height:110px;
- background: url(../img/EVE%201.jpg);
-  background-repeat:no-repeat;
-   background-size:100% 100% ;
-    margin: auto;
-	 margin-top:15px; }
-section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
-	 font-size:15px;
-	  color:rgba(255,255,255,0.7);
-	   margin-top:15px; 
-	   width:130px;
-	    margin-left:20px;
-		 }
-section #contenedor #evento1 #artiseve1 h2,section #contenedor #evento2 #artiseve2 h2,section #contenedor #evento3 #artiseve3 h2,section #contenedor #evento4 #artiseve4 h2 {font-size:15px;
- color:rgba(255,255,255,0.7);
-  margin-top:15px;} 
-  
-section #contenedor #evento1 #artiseve1 ul,section #contenedor #evento1 #dateve1 ul,section #contenedor #evento2 #dateve2 ul,section #contenedor #evento2 #artiseve2 ul,section #contenedor #evento3 #dateve3 ul,section #contenedor #evento3 #artiseve3 ul,section #contenedor #evento4 #dateve4 ul,section #contenedor #evento4 #artiseve4 ul { list-style:none; } 
-
-section #contenedor #evento1 #artiseve1 ul li,#contenedor #evento2 #artiseve2 ul li,#contenedor #evento3 #artiseve3 ul li,#contenedor #evento4 #artiseve4 ul li {
-	font-size:13px; 
-	color:rgba(255,255,255,0.7);
-	 margin-top:10px; 
-	 }
-section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
-	font-size:15px;
-	 color:rgba(255,255,255,0.7);
-	  margin-top:10px; float:left; 
-	  font-weight:bold ; 
-	   }
- section #contenedor #evento2 {
-	  margin-left:30px;
-	   margin-top:257px;
-	   }
-section #contenedor #evento2 #imgeve2{
-	 width:147px;
-	  height:110px;
-	   background: url(../img/EVE%202.jpg);
-	    background-repeat:no-repeat;
-		 background-size:100% 100% ; 
-		 margin: auto;
-		  margin-top:15px; }
- section #contenedor #evento3 {
-	  margin-left:30px;
-	   margin-top:223px;
-	   }
- section #contenedor #evento3 #imgeve3{ 
- width:147px;
-  height:110px; 
-  background: url(../img/EVE%203.jpg);
-   background-repeat:no-repeat; 
-   background-size:100% 100% ; 
-   margin: auto; margin-top:15px; }
-  section #contenedor #evento4 {
-	   margin-left:30px; 
-	   margin-top:222px;}
- section #contenedor #evento4 #imgeve4{ 
- width:147px;
-  height:110px;
-   background:
-    url(../img/EVE4.jpg);
-	 background-repeat:no-repeat; 
-	 background-size:100% 100% ; 
-	 margin: auto;
-	  margin-top:15px; }
-
-
-
-	  /*musica*/
-	  #fondomus { position: absolute; z-index:-1; width: 100%; height:923px ;background: url(../img/disco-musica.jpg) ; background-size:100%;}
-
-#fondo3{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:923px;
-	 
-	 background: url(../img/colec.jpg)  ;
-	 background-size: cover; 
-	 animation-name: fondo1; 
-	 animation-duration: 15s;
-	 animation-iteration-count:infinite;
-	 
-	 -webkit-animation-name: fondo1; 
-	 -webkit-animation-duration: 15s;
-	 -webkit-animation-iteration-count:infinite;
-	 -moz-animation-name: fondo1; 
-	 -moz-animation-duration: 15s;
-	 -moz-animation-iteration-count:infinite; 
-	 -ms-animation-name: fondo1; 
-	 -ms-animation-duration: 15s;
-	 -ms-animation-iteration-count:infinite;
-	 	 -o-animation-name: fondo1; 
-	 -o-animation-duration: 15s;
-	 -o-animation-iteration-count:infinite;
+ footer #margen_footer {
+     padding: 20px;
 }
-
-@keyframes fondo3{
-	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ .separador {
+     clear:both ;
 }
- 
-@-webkit-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ header #logo {
+     margin-top:89px;
+     margin-left:13px;
 }
-
-@-moz-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ header nav {
+    width:140px;
 }
-@-o-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	25%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ header nav #menu {
+     margin-left: 30px;
 }
-section #contenedor #reproducir { width:1030px; 
-   border:1px solid transparent;
-margin-top:87px;
- }
- section #contenedor #reproducir #imgrepro{ 
- 
- width:230px;
-  height:160px;
-   background:url(../img/icicle.jpg); 
-   background-size:100% 100%;
+ header nav ul {
+    margin-top:91px;
+     margin-right:40px;
+    list-style:none;
+     margin-bottom: 252px;
+}
+ header nav ul li {
+     margin-top:70px;
+}
+ header nav ul a {
+     background:url(../img/vineta_03.png);
     background-repeat:no-repeat;
-	 float:left;
-	 margin-right:30px;
-	    box-shadow:0px 0px 15px rgba(0,0,0,1);
-	 }
-  section #contenedor #reproducir  h3 {font-size:20px;
- color: rgba(255,255,255,1);
-  margin-top:25px;
-  }
-   section #contenedor #reproducir  p {font-size:15px;
- color: rgba(255,255,255,0.8);
-  margin-top:20px;
-  margin-bottom:20px;
- }
- section #contenedor #mus1 { width:160px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:35px;
-	vertical-align:center;}
- section #contenedor #mus1 #cancion1 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus1 #cancion1:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus1 #cancion1 #imgcan1{  background: url(../img/Ed.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus1 #cancion1 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  margin-left:28px; }
-   section #contenedor #mus1 #cancion1 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-  margin-left:36px; }
-
- section #contenedor #mus1 #cancion2 { width:160px ; height:137px; margin-top:25px;
-  
-  background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent ; 
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus1 #cancion2:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus1 #cancion2 #imgcan2{  background: url(../img/Seba.jpg);
-	 background-size: 75px 55px;
-	  background-repeat:no-repeat ;
-	   float:left; width:75px ;
-	    height:55px;
-		margin-left:43px;
-		 margin-top:20px;}
-	 section #contenedor #mus1 #cancion2 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  margin-left:64px; }
-   section #contenedor #mus1 #cancion2 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-  margin-left:33px; }
-  
-  
-  
-  
-  section #contenedor #mus2 { width:160px;  margin-top:100px; float:left; text-align:center; margin-right:35px;}
-   section #contenedor #mus2 #cancion3 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus2 #cancion3:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus2 #cancion3 #imgcan3{  background: url(../img/Rudi.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus2 #cancion3 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus2 #cancion3 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-  
-   section #contenedor #mus2 #cancion4 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
- 
- 	transition: all 0.5s; position: relative;
-	margin-top:30px;}
-	 section #contenedor #mus2 #cancion4:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus2 #cancion4 #imgcan4{  background: url(../img/Nero.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus2 #cancion4 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus2 #cancion4 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-
-
-section #contenedor #mus3 { width:160px; margin-top:125px; float:left; text-align:center; margin-right:35px;}
-   section #contenedor #mus3 #cancion5 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus3 #cancion5:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus3 #cancion5 #imgcan5{  background: url(../img/Feint.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus3 #cancion5 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus3 #cancion5 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-  
-   section #contenedor #mus3 #cancion6 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
- 
- 	transition: all 0.5s; position: relative;
-	margin-top:30px;}
-	 section #contenedor #mus3 #cancion6:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus3 #cancion6 #imgcan6{  background: url(../img/dj-marky.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus3 #cancion6 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus3 #cancion6 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-
-	  	  
-
-section #contenedor #mus4 { width:160px;  margin-top:35px; float:left; text-align:center; margin-right:30px;}
-   section #contenedor #mus4 #cancion7 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus4 #cancion7:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus4 #cancion7 #imgcan7{  background: url(../img/State%20Of%20Mind.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus4 #cancion7 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus4 #cancion7 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-  
-   section #contenedor #mus4 #cancion8 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-   
- 	transition: all 0.5s; position: relative;
-	margin-top:30px;}
-	 section #contenedor #mus4 #cancion8:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus4 #cancion8 #imgcan8{  background: url(../img/Logistics.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus4 #cancion8 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus4 #cancion8 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-   
-   
-   
-   
-   
-   /*boletas*/
-     #fondobol { position: absolute; z-index:-1; width: 100%; height:923px ;background:url(../img/disco.jpg) ; background-size:100%;}
-
-#fondo4{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:923px;
-	 
-	 background: url(../img/gram.jpg)  ;
-	 background-size: cover; 
-	 animation-name: fondo1; 
-	 animation-duration: 15s;
-	 animation-iteration-count:infinite;
-	 
-	 -webkit-animation-name: fondo1; 
-	 -webkit-animation-duration: 15s;
-	 -webkit-animation-iteration-count:infinite;
-	 -moz-animation-name: fondo1; 
-	 -moz-animation-duration: 15s;
-	 -moz-animation-iteration-count:infinite;	
-	 -o-animation-name: fondo1; 
-	 -o-animation-duration: 15s;
-	 -o-animation-iteration-count:infinite; 
+    background-position:left;
+    text-decoration:none;
+    color:#43FF24;
+    font-size:14px;
+     margin:5px;
+     padding: 10px;
 }
-
-@keyframes fondo3{
-	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ header nav ul li a:hover, header nav ul li a:active {
+    background: rgba(0,0,0,0.9);
+    border-radius:2px;
 }
- 
-@-webkit-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos{
+    width:325px;
+     float:left;
+     background: rgba(0,0,0,0.8);
+     margin-top:220px;
+    box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
 }
-@-moz-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos:hover {
+    transform: scale(1.25,1.25);
 }
-
-@-o-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos h2 {
+    font-size:15px;
+     color:rgba(255,170,0,1);
+    background:url(../img/vineta1.png);
+    background-repeat:no-repeat;
+    background-position:left;
+    padding-left:15px;
+     margin-top:18px;
+     margin-bottom:20px;
+     margin-left:11px;
 }
-section #contenedor #contbole { width:300px; list-style: none; margin-top: 190px; float:left;}
-section #contenedor #contbole2 { width:300px; list-style: none; margin-top: 190px; float:right; padding-right:30px;}
-section #contenedor #boletas1,section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{ width:290px ; 
- background: rgba(0,0,0,0.8);
-  float: left ; 
-   margin-top: 23px;
-    padding:10px; 
-	box-shadow:0px 0px 15px rgba(0,0,0,1);
-	transition: all 0.5s; 
-	position: relative; }
-section #contenedor #boletas1:hover,section #contenedor #boletas2:hover,section #contenedor #boletas3:hover,section #contenedor #boletas4:hover,section #contenedor #boletas5:hover,section #contenedor #boletas6:hover {
-	transform: scale(1.25,1.25);}
-	
-	section #contenedor #boletas1 #imgbo1 { width:130px; height:80px; background: url(../img/tuboleta.png); background-repeat:no-repeat; background-size: 100%; float:left;   }
-	section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2 ,section #contenedor #boletas3 #dirbo3 { width:155px; float:right;}
-	section #contenedor #boletas4 #dirbo4,section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6 { width:155px; float: left;}
-	section #contenedor #boletas1 #dirbo1 ul ,section #contenedor #boletas2 #dirbo2 ul ,section #contenedor #boletas3 #dirbo3 ul,section #contenedor #boletas4 #dirbo4  ul,section #contenedor #boletas5 #dirbo5  ul,section #contenedor #boletas6 #dirbo6  ul  { list-style: none;}
-	section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {font-size:15px;
-	 color:rgba(255,255,255,0.7);
-	  margin-top:10px; 
-	  font-weight:bold ;}
-	  
-	 section #contenedor #boletas2 #imgbo2{ width:130px;
-	  height:80px;
-	   background: url(../img/blacout.jpg) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-		 	  
-	 section #contenedor #boletas3 #imgbo3{ width:130px;
-	  height:80px;
-	   background: url(../img/bogota.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-	  	
-    section #contenedor #boletas4 #imgbo4{ width:130px;
-	  height:80px;
-	   background: url(../img/hospital.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-
-	  	  
-	  	
-    section #contenedor #boletas5 #imgbo5{ width:130px;
-	  height:80px;
-	   background: url(../img/reset.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-
-
-	  	
-    section #contenedor #boletas6 #imgbo6{ width:130px;
-	  height:80px;
-	   background: url(../img/inbassion.jpg) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-		 
-		 
-		 
-		 
-		 /* productos*/
-
-	  	     #fondoprod { position: absolute; z-index:-1; width: 100%; height:923px ;background: url(../img/Discos.jpg) ; background-size:100%;}
-
-#fondo5{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:923px;
-	 
-	 background: url(../img/disc.jpg)  ;
-	 background-size: cover; 
-	 animation-name: fondo1; 
-	 animation-duration: 15s;
-	 animation-iteration-count:infinite;
-	 
-	 -webkit-animation-name: fondo1; 
-	 -webkit-animation-duration: 15s;
-	 -webkit-animation-iteration-count:infinite;
-	 -moz-animation-name: fondo1; 
-	 -moz-animation-duration: 15s;
-	 -moz-animation-iteration-count:infinite;
-	 -o-animation-name: fondo1; 
-	 -o-animation-duration: 15s;
-	 -o-animation-iteration-count:infinite;
-
-
+ section #ultimos #ult1{
+     width:200px;
+     margin-left:11px;
 }
-
-@keyframes fondo3{
-	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos #ult1 #imgul1 {
+     background:url(../img/Pendulun.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+     margin-bottom:15px;
 }
- 
-@-webkit-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos #ult1 h3 {
+     font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
 }
-
-@-moz-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos #ult1 p{
+     font-size:14px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+    margin-left:95px;
 }
-@-o-keyframes fondo3{ 
- 	0%{opacity: 0;}
- 	35%{opacity: 1;} 
-	75%{opacity: 1;}
-	100%{opacity: 0;}
+ section #ultimos #ult1 audio {
+     margin-bottom:10px;
 }
-
-section #contenedor #productos1,section #contenedor #productos2,section #contenedor #productos3,section #contenedor #productos4 {float: left ;width:210px; margin-top: 160px; margin-right:30px; }
-section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6,section #contenedor #productos4 #produ7,section #contenedor #productos4 #produ8 { width:185px ; 
- background: rgba(0,0,0,0.8);
-  float: left ; 
-  margin-top: 30px;
-    padding:15px; 
-	box-shadow:0px 0px 15px rgba(0,0,0,1);
-	transition: all 0.5s; 
-	position: relative; text-align:center; } 
-	section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {transform: scale(1.25,1.25);}
-	
-		 section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3  { font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:15px;  }
-   section #contenedor #productos1 #produ1 p, section #contenedor #productos1 #produ2 p,section #contenedor #productos2 #produ3 p,section #contenedor #productos2 #produ4 p,section #contenedor #productos3 #produ5 p,section #contenedor #productos3 #produ6 p,section #contenedor #productos4 #produ7 p,section #contenedor #productos4 #produ8 p{ font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; }
-  
-  
-  
-  
-  section #contenedor #productos1 #produ1 #imgpro1 { width:130px;
-	 height:128px;  
-	 background: url(../img/camisanegra1.png);
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-
-  
-	section #contenedor #productos1 #produ2 #imgpro2 { width:130px;
-	 height:128px;  
-	 background: url(../img/termos.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-	 
-	   
-  section #contenedor #productos2 #produ3 #imgpro3 { width:130px;
-	 height:128px;  
-	 background: url(../img/camisa2.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-
-  
-	section #contenedor #productos2 #produ4 #imgpro4 { width:130px;
-	 height:128px;  
-	 background: url(../img/cuaderno.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-	 
-	 
-	  section #contenedor #productos3 #produ5 #imgpro5 { width:130px;
-	 height:128px;  
-	 background: url(../img/gorra.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-
-  
-	section #contenedor #productos3 #produ6 #imgpro6 { width:130px;
-	 height:128px;  
-	 background: url(../img/reloj1%20copia.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-	   section #contenedor #productos4 #produ7 #imgpro7 { width:130px;
-	 height:128px;  
-	 background: url(../img/tshirt_PNG5448%20copia.png) ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-
-  
-	section #contenedor #productos4 #produ8 #imgpro8 { width:130px;
-	 height:128px;  
-	 background: url(../img/patmouse.png)  ;
-	  background-size: 100% 100%;
-	  margin-left:30px; 
-	 }
-
-	 /* resposive 480*/
-
-@media only screen  and (max-width: 480px) { 
-	/*home*/
-
-
-#fondohome { width: 100%;  height: 1425px;background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ; background-size:cover ;}
-#fondo1 {	 width: 100% 100%; height: 1425px; background-size:  cover;}
-#conteprin {width: 463px; }
-header {width: 462px; height: 150px  ;  }
-header #logo {width:213px; height:48px; background:url(../img/logo.jpg); background-size: 100%; padding: 0 ; position: absolute;  left: 50%;  top: -50px; margin-left: -106px; }
-header nav #menu { width: 100%;  text-align: center; margin-left: 0; }
-header nav { width: 100%; }
-header nav  #menu ul {margin-right: 0; margin-bottom: 0; margin-top: 110px; }
-header nav #menu ul li { display: inline-block; margin-top: 0; }
-section #contenedor {width:450px; margin-bottom:4px; margin-left:0px; padding:20px 0 0 10px;}
-section #contenedor  #ultimos{width:340px; float:left;  margin-top:20px; margin-left: 25px; padding-left: 11px; }
-section #contenedor  #ultimos:hover {transform: scale(1.15,1.15);}
-section #contenedor #maratones{width:340px; float:left;  margin-top:20px; margin-left:25px; padding-left:11px; } 
-section #contenedor #maratones:hover {transform: scale(1.15,1.15);}
-section #contenedor #djs {width:340px; float: left;  margin-top:20px; margin-left:25px; padding-left:11px; } 
-footer #margen_footer { padding-bottom: 35px;}
-	section #contenedor #djs:hover{transform: scale(1.15,1.15);}
-	footer #redes { width:110px; margin-left:8px; }
-	footer #redes #rd1,footer #redes #rd2,footer #redes #rd3{ width:20px; height:20px; background-size:100% 100%; margin-right:5px;  display: inline-block;}
-	footer #copy { width: 150px; position: absolute; left: 50%; margin-left: -83px; text-align: center; margin-top: -13px;}
-
-footer #log{background:url(../img/logo.jpg); width:110px; height:30px; background-size: 100% 100%;  position: absolute; right: 20px; top: 20px;}
-
+ section #ultimos #ult2{
+     width:200px;
+     margin-left:11px;
+}
+ section #ultimos #ult2 #imgul2 {
+     background:url(../img/Netsky.png);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px
+}
+ section #ultimos #ult2 h3 {
+     font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
+}
+ section #ultimos #ult2 p{
+     font-size:14px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+    margin-left:95px;
+}
+ section #ultimos #ult2 audio {
+     margin-bottom:10px;
+}
+ section #ultimos #ult3{
+     width:200px;
+     margin-left:11px;
+     margin-bottom:20px;
+}
+ section #ultimos #ult3 #imgul3 {
+     background:url(../img/DJFresh.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px
+}
+ section #ultimos #ult3 h3 {
+     font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
+}
+ section #ultimos #ult3 p{
+     font-size:14px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+    margin-left:95px;
+}
+ section #ultimos #ult3 audio {
+     margin-bottom:10px;
+}
+ section #maratones{
+    width:325px;
+     float:left;
+     background: rgba(0,0,0,0.8);
+     margin-top:364px;
+     margin-left:30px;
+     padding-left:11px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
+}
+ section #maratones:hover {
+    transform: scale(1.25,1.25);
+}
+ section #maratones #mara1 {
+     margin-bottom:55px;
+}
+ section #maratones #mara1 #imgmara{
+     background:url(../img/STEALTH.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px
+}
+ section #maratones h2{
+    font-size:15px;
+     color:rgba(255,170,0,1);
+    background:url(../img/vineta1.png);
+    background-repeat:no-repeat;
+    background-position:left;
+    padding-left:15px;
+     margin-top:18px;
+     margin-bottom:20px;
+     margin-left:11px;
+}
+ section #maratones #mara2 #imgmara1{
+     background:url(../img/fabric.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px
+}
+ section #maratones h3 {
+     font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
+}
+ section #maratones p {
+     font-size:14px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+    margin-left:95px;
+     padding-right:15px;
+}
+ section #maratones audio {
+     margin-bottom:40px;
+}
+ section #djs {
+    width:315px;
+     float: right;
+     background: rgba(0,0,0,0.8);
+     margin-top:352px;
+     margin-left:30px;
+     padding-left:11px;
+     padding-bottom:25px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
+}
+ section #djs:hover{
+    transform: scale(1.25,1.25);
+}
+ section #djs h2{
+    font-size:15px;
+     color:rgba(255,170,0,1);
+    background:url(../img/vineta1.png);
+    background-repeat:no-repeat;
+    background-position:left;
+    padding-left:15px;
+     margin-top:18px;
+     margin-bottom:20px;
+     margin-left:11px;
+}
+ section #djs #dj1 {
+     margin-bottom:-66px ;
+     float:left;
+     width:250px;
+}
+ section #djs #dj1 #imgdj1{
+    background:url(../img/icicle.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px 
+}
+ section #djs #dj1 h3{
+    font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
+     margin-top:25px;
+}
+ section #djs #dj2 {
+     margin-bottom:10px ;
+     float:left;
+     margin-top:65px;
+    width:250px;
+}
+ section #djs #dj2 #imgdj2{
+    background:url(../img/xlarge.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    margin-bottom:15px 
+}
+ section #djs #dj2 h3{
+    font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:95px;
+     margin-top:25px;
+}
+ section #djs #dj3 {
+     margin-bottom:95px;
+    width:250px;
+}
+ section #djs #dj3 #imgdj3{
+    background: url(../img/phonics.jpg);
+     width:85px;
+     height:70px;
+     float:left;
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+}
+ section #djs #dj3 h3{
+    font-size:15px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7) ;
+     margin-left:10px;
+     margin-top:25px;
+     float:left;
+}
+ footer #redes {
+     width:140px;
+     margin-left:20px;
+     display: inline-block;
+}
+ footer #redes #rd1{
+    background:url(../img/twit.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+     margin-right:10px;
+     display: inline-block;
+}
+ footer #redes #rd2{
+    background:url(../img/face.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+    margin-right:10px;
+     display: inline-block;
+}
+ footer #redes #rd3{
+    background:url(../img/insta.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+    margin-right:20px;
+     display: inline-block;
+}
+ footer #copy {
+    display: inline-block;
+     width: 350px;
+     position: absolute;
+     left: 50%;
+     margin-left: -175px;
+     text-align: center;
+}
+ footer #copy p {
+    font-size:10px;
+     font-style:normal;
+     color:rgba(255,255,255,0.7);
+     margin-top:10px;
+    ;
+     float:left;
+}
+ footer #log{
+    background:url(../img/logo.jpg);
+     width:110px;
+     height:30px;
+     background-size: 100% 100%;
+     position: absolute;
+     right: 20px;
+     top: 20px;
+}
 /*eventos*/
-#fondoeve {  width: 100%; height:2255px ;background: url(../img/disco-vin.jpg)  ; background-size: cover;
+ #fondoeve {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px ;
+    background: url(../img/disco-vin.jpg) ;
+     background-size: 100% 100%;
 }
-#fondo2{ width: 100% ; height: 2255px; background-size:  cover;	}
-section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{ width:360px ; 
-margin-left: 25px;
-   margin-top: 25px;
-    padding:15px; 
-    text-align: center;
-	transition: all 0.5s; 
-	position: relative; }
-	section #contenedor #evento1:hover,section #contenedor #evento2:hover,section #contenedor #evento3:hover,section #contenedor #evento4:hover {
-	transform: scale(1.15,1.15);}
-
-	section #contenedor #evento1 #imgeve1{ 
-width:200px; 
-height:110px;
- background: url(../img/EVE%201.jpg);
-  background-repeat:no-repeat;
-   background-size:100% 100% ;
-    margin: auto;
-	 margin-top:15px; }
-section #contenedor #evento2 #imgeve2{
-	 width:200px;
-	  height:110px;
-	   background: url(../img/EVE%202.jpg);
-	    background-repeat:no-repeat;
-		 background-size:100% 100% ; 
-		 margin: auto;
-		  margin-top:15px; }
- section #contenedor #evento3 #imgeve3{ 
-      width:200px;
-      height:110px; 
+ #fondo2{
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px;
+     background: url(../img/fondo2.jpg) ;
+     background-size: cover;
+     animation-name: fondo1;
+     animation-duration: 30s;
+     animation-iteration-count:infinite;
+     -webkit-animation-name: fondo1;
+     -webkit-animation-duration: 30s;
+     -webkit-animation-iteration-count:infinite;
+     -moz-animation-name: fondo1;
+     -moz-animation-duration: 30s;
+     -moz-animation-iteration-count:infinite;
+     -ms-animation-name: fondo1;
+     -ms-animation-duration: 30s;
+     -ms-animation-iteration-count:infinite;
+     -o-animation-name: fondo1;
+     -o-animation-duration: 30s;
+     -o-animation-iteration-count:infinite;
+}
+ @keyframes fondo2{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-moz-keyframes fondo2{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-o-keyframes fondo2{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-webkit-keyframes fondo2{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{
+     width:185px ;
+     background: rgba(0,0,0,0.8);
+     float: left ;
+     margin-top: 223px;
+     padding:15px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #evento1:hover,section #contenedor #evento2:hover,section #contenedor #evento3:hover,section #contenedor #evento4:hover {
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #evento1 #imgeve1{
+     width:147px;
+     height:110px;
+     background: url(../img/EVE%201.jpg);
+     background-repeat:no-repeat;
+     background-size:100% 100% ;
+     margin: auto;
+     margin-top:15px;
+}
+ section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
+     font-size:15px;
+     color:rgba(255,255,255,0.7);
+     margin-top:15px;
+     width:130px;
+     margin-left:20px;
+}
+ section #contenedor #evento1 #artiseve1 h2,section #contenedor #evento2 #artiseve2 h2,section #contenedor #evento3 #artiseve3 h2,section #contenedor #evento4 #artiseve4 h2 {
+    font-size:15px;
+     color:rgba(255,255,255,0.7);
+     margin-top:15px;
+}
+ section #contenedor #evento1 #artiseve1 ul,section #contenedor #evento1 #dateve1 ul,section #contenedor #evento2 #dateve2 ul,section #contenedor #evento2 #artiseve2 ul,section #contenedor #evento3 #dateve3 ul,section #contenedor #evento3 #artiseve3 ul,section #contenedor #evento4 #dateve4 ul,section #contenedor #evento4 #artiseve4 ul {
+     list-style:none;
+}
+ section #contenedor #evento1 #artiseve1 ul li,#contenedor #evento2 #artiseve2 ul li,#contenedor #evento3 #artiseve3 ul li,#contenedor #evento4 #artiseve4 ul li {
+     font-size:13px;
+     color:rgba(255,255,255,0.7);
+     margin-top:10px;
+}
+ section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
+     font-size:15px;
+     color:rgba(255,255,255,0.7);
+     margin-top:10px;
+     float:left;
+     font-weight:bold ;
+}
+ section #contenedor #evento2 {
+     margin-left:30px;
+     margin-top:257px;
+}
+ section #contenedor #evento2 #imgeve2{
+     width:147px;
+     height:110px;
+     background: url(../img/EVE%202.jpg);
+     background-repeat:no-repeat;
+     background-size:100% 100% ;
+     margin: auto;
+     margin-top:15px;
+}
+ section #contenedor #evento3 {
+     margin-left:30px;
+     margin-top:223px;
+}
+ section #contenedor #evento3 #imgeve3{
+     width:147px;
+     height:110px;
      background: url(../img/EVE%203.jpg);
-     background-repeat:no-repeat; 
-     background-size:100% 100% ; 
-     margin: auto; margin-top:15px; }
-
-      section #contenedor #evento4 #imgeve4{ 
- width:200px;
-  height:110px;
-   background:
-    url(../img/EVE4.jpg);
-	 background-repeat:no-repeat; 
-	 background-size:100% 100% ; 
-	 margin: auto;
-	  margin-top:15px; }
-section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
-		    
-	   width:230px;
-	    margin:auto;
-	    padding-top: 15px;
-		 }
-		  section #contenedor #evento1 #dateve1 ul ,section #contenedor #evento2 #dateve2 ul ,section #contenedor #evento3 #dateve3 ul ,section #contenedor #evento4 #dateve4 ul {margin:auto; width: 200px;}
-		 section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
-	font-size:15px;
-	 width: 200px ;
-	  margin:center;
-	   float:left; 
-	   padding-top: 15px ;
-	  font-weight:bold ; 
-	   }
-	   /*musica*/
-	   	  #fondomus {  width: 100%; height:1230px ;background: url(../img/disco-musica.jpg) ; background-size:cover;}
-
-#fondo3{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:1230px;
-	 
-	 background: url(../img/colec.JPG)  ;
-background-size:cover;
-
+     background-repeat:no-repeat;
+     background-size:100% 100% ;
+     margin: auto;
+     margin-top:15px;
 }
-
-section #contenedor #reproducir { width:400px; 
-   border:1px solid transparent;
-margin-top:85px;
- }
- section #contenedor #reproducir #imgrepro{ 
- 
- width:230px;
-  height:160px;
-   background:url(../img/icicle.jpg); 
-   background-size:100% 100%;
-    background-repeat:no-repeat;
-	 float:left;
-	 margin-right:47px;
-	
-	    margin-bottom: 15px;
-	 }
-  section #contenedor #reproducir  h3 {font-size:15px;
-
-  margin-top:20px;
-  }
-   section #contenedor #reproducir  p {font-size:15px;
- color: rgba(255,255,255,0.8);
-  margin-top:20px;
-  margin-bottom:20px;
- }
-   section #contenedor #reproducir audio{ width: 400px; }
-    section #contenedor #mus1 { width:160px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:35px;
-	vertical-align:center;}
-	  section #contenedor #mus2 { width:160px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:35px;
-	vertical-align:center;}
-
-  section #contenedor #mus3 { width:160px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:35px;
-	vertical-align:center;}
- /*boletas*/
-   #fondobol {  width: 100%; height:1315px ;background:url(../img/disco.png) ; background-size:cover;}
-
-#fondo4{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:1315px;
-	 
-	 background: url(../img/gram.png)  ;
-	 background-size: cover; }
-	 section #contenedor #contbole { width:400px; list-style: none; margin-top: 20px; float:left;}
-section #contenedor #contbole2 { width:400px; list-style: none; margin-top: 30px; float:left; margin-bottom: 30px;}
-section #contenedor #boletas1,section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{ width:375px ; 
-margin: auto;
-   
-   margin-top: 23px;
-    padding:25px; 
-	
-	transition: all 0.5s; 
-	position: relative; }
-section #contenedor #boletas1:hover,section #contenedor #boletas2:hover,section #contenedor #boletas3:hover,section #contenedor #boletas4:hover,section #contenedor #boletas5:hover,section #contenedor #boletas6:hover {
-	transform: scale(1.15,1.15);}
-	section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2 ,section #contenedor #boletas3 #dirbo3,	section #contenedor #boletas4 #dirbo4,section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6 { width:155px; float:right;}
-	
-
-	section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {font-size:20px;
-	
-	  margin-top:7px; 
-	  font-weight:bold ;}
-
-
-	  /*productos*/
-	   	     #fondoprod {  width: 100%; height:1144px ;background: url(../img/Discos.png) ; background-size:cover; background-repeat: no-repeat;}
-
-#fondo5{
-	
-	 width: 100%;
-	 height:1144px;
-	 
-	 background: url(../img/disc.png)  ;
-	 background-size: cover;
-	 background-repeat: no-repeat; }
-	 section #contenedor #productos1,section #contenedor #productos2,section #contenedor #productos3,section #contenedor #productos4 { width:210px; 
-	 margin: auto; }
-	 section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6,section #contenedor #productos4 #produ7,section #contenedor #productos4 #produ8 { width:175px ; 
-
-  float: left ; 
-  margin-top: 30px;
-    padding:8px; 
-    margin-left: 10px;
-	
-	transition: all 0.5s; 
-	position: relative; text-align:center; } 
+ section #contenedor #evento4 {
+     margin-left:30px;
+     margin-top:222px;
 }
-
-
-/*----768---*/ 
-
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-
-
-/*home*/
-body {font-family:Arial, Helvetica, sans-serif;}
-#fondohome {  width: 100%; height:823px ;background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ; background-size: cover;}
-
-#fondo1{	
-	 
-	 width: 100%;
-	 height:823px;
-	 
-	 
-	 
+ section #contenedor #evento4 #imgeve4{
+     width:147px;
+     height:110px;
+     background: url(../img/EVE4.jpg);
+     background-repeat:no-repeat;
+     background-size:100% 100% ;
+     margin: auto;
+     margin-top:15px;
 }
-
-
-header {
-	width: 19%;
-	background: rgba(0,0,0,0.8);
-	display: inline-block;
-	vertical-align: top;
-}
-
-section {
-	width: 72%;
-	display: inline-block;
-	}
-
-footer {
-	width: 100%;
-	background: rgba(0,0,0,0.8);
-	position: relative;
-}
-
-footer #margen_footer {
-	padding: 20px;
-}
-
-#separador { clear:both ;}
-header #logo {width:123px; height:48px; background:url(../img/logo.jpg); background-repeat: no-repeat; background-size: 100%; margin-top:89px; margin-left:10px;}
-header nav {width:140px;  }
-header nav ul {margin-top:91px; margin-right:40px;list-style:none; margin-bottom: 150px;  margin-left: -18px;}
-
-section #contenedor {width:584px; margin-bottom:4px; margin-left:-10px; padding:10px 10px 0 20px;}
-
-
-section #contenedor  #ultimos{width:280px; float:left; background: rgba(0,0,0,0.8); margin-top:220px;
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;}
-	section #contenedor  #ultimos:hover {transform: scale(1.25,1.25);}
-section #contenedor #ultimos #ult1 audio { margin-bottom:10px; width: 250px;}
-
-section #contenedor #ultimos #ult2 audio { margin-bottom:10px; width: 250px;}
-
-section #contenedor #ultimos #ult3 audio { margin-bottom:10px; width: 250px;}
-
-
-section #contenedor #maratones{width:260px; float:left; background: rgba(0,0,0,0.8); margin-top:345px; margin-left:15px; padding-left:11px;
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;} 
-section #contenedor #maratones audio { margin-bottom:40px; width: 240px;}
-
-.oculto {
-	display: none;
-}
-
-/*eventos */
-#fondoeve {  width: 100%; height:823px ;background: url(../img/disco-vin.jpg)  ; background-size: cover;}
-
-#fondo2{
-	
-	 width: 100%;
-	 height:823px;
-	 background-size: cover;
-}
-
-
-section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento3,section #contenedor #evento4 { 
-	width:230px ;
-	height: 250px;
-  float: left ; 
-   margin-top: 53px;
-   padding:10px; 
-	transition: all 0.5s; 
-	position: relative; 
-}
-
-section #contenedor #evento3{margin-left: 0px;}
-section #contenedor #evento1 #imgeve1 { 
-width:100px; 
-height:90px;
- background: url(../img/EVE%201.jpg);
-  background-repeat:no-repeat;
-   background-size:100% 100% ;
-    float: left;
-	 margin-top:10px; 
-	  margin-bottom: 15px;}
-
-
-section #contenedor #evento2 #imgeve2{
-	 width:100px;
-	  height:90px;
-	   background: url(../img/EVE%202.jpg);
-	    background-repeat:no-repeat;
-		 background-size:100% 100% ; 
-		 float: left;
-		  margin-top:10px; 
-		  margin-bottom: 15px;}
-section #contenedor #evento3 #imgeve3{ 
- width:100px;
-  height:90px; 
-  background: url(../img/EVE%203.jpg);
-   background-repeat:no-repeat; 
-   background-size:100% 100% ; 
-   float: left; margin-top:15px; 
-margin-bottom: 15px;
-}
-
- section #contenedor #evento4 #imgeve4{ 
- width:100px;
-  height:90px;
-   background:
-    url(../img/EVE4.jpg);
-	 background-repeat:no-repeat; 
-	 background-size:100% 100% ; 
-	 float: left;
-	  margin-top:15px; 
-	  margin-bottom: 15px;}
-
-
-
-
-section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1 {
-	
-	 font-size:13px;
-	 
-	   margin-top:38px; 
-	   width:120px;
-	    margin-left:115px;
-	    
-		 
-}
-
-
-section #contenedor #evento1 #artiseve1 h2,section #contenedor #evento2 #artiseve2 h2,section #contenedor #evento3 #artiseve3 h2,section #contenedor #evento4 #artiseve4 h2{
-	width: 100px;
-font-size:12px;
-
- 
-}
-
-section #contenedor #evento1 #artiseve1 ul li,section #contenedor #evento2 #artiseve2 ul li,section #contenedor #evento3 #artiseve3 ul li,section #contenedor #evento4 #artiseve4 ul li  {
-	font-size:13px; 
-	
-	 margin-top:10px;
-	 margin-left: 10px; 
-	 }
-
-section #contenedor #evento1 #dateve1,section #contenedor #evento2 #dateve2,section #contenedor #evento3 #dateve3,
-section #contenedor #evento4 #dateve4 {
-	width: 100px;
-	margin-top: -150px;
-	float: right;
-	margin-left: 10px;
-
-}
-
-section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li  {
-	font-size:15px;
-	 color:rgba(255,255,255,0.7);
-	  margin-top:10px; float:left; 
-	 
-	  font-weight:bold ;
-	  width: 100px; 
-	   }
-
-
-
-/*------musica 768px-------*/
-#fondomus {  width: 100%; height:823px ;background-repeat: no-repeat; background: url(../img/disco-musica.jpg) ; background-size:cover;}
-
-#fondo3{
-	
-	 background-repeat: no-repeat;
-	 width: 100%;
-	 height:823px;
-	 background-size: cover;
-	 
-}
-
-
-
-section #contenedor #reproducir { width:500px; 
-   border:1px solid transparent;
-margin-top:78px;
-
- }
- section #contenedor #reproducir #imgrepro{ 
- 
- width:200px;
-  height:160px;
-   background:url(../img/icicle.jpg); 
-   background-size:100% 100%;
-    background-repeat:no-repeat;
-
-
-	 margin-right:30px;
-
-	 }
-  section #contenedor #reproducir  h3 {font-size:20px;
- color: rgba(255,255,255,1);
-  margin-top:25px;
-  }
-   section #contenedor #reproducir  p {font-size:15px;
- color: rgba(255,255,255,0.8);
-  margin-top:20px;
-  margin-bottom:20px;
- }
- section #contenedor #reproducir audio { width: 268px; margin-top: 10px;}
- section #contenedor #mus1 { width:150px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:5px;
-	vertical-align:center;}
- section #contenedor #mus1 #cancion1 { width:150px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus1 #cancion1:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus1 #cancion1 #imgcan1{  background: url(../img/Ed.jpg); 
-	background-size: 70px 50px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:40px; 
-	   margin-top:10px;}
-	 section #contenedor #mus1 #cancion1 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:70px; 
-  margin-left:18px; }
-   section #contenedor #mus1 #cancion1 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-  margin-left:26px; }
-
- section #contenedor #mus1 #cancion2 { width:150px ; height:137px; margin-top:25px;
-  
-  background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent ; 
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus1 #cancion2:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus1 #cancion2 #imgcan2{  background: url(../img/Seba.jpg);
-	 background-size: 75px 55px;
-	  background-repeat:no-repeat ;
-	   float:left; width:75px ;
-	    height:55px;
-		margin-left:38px;
-		 margin-top:10px;}
-	 section #contenedor #mus1 #cancion2 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:70px; 
-  margin-left:64px; }
-   section #contenedor #mus1 #cancion2 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-  margin-left:28px; }
-  
-  
-  
-  
-  section #contenedor #mus2 { width:150px;  margin-top:100px; float:left; text-align:center; margin-right:35px;}
-   section #contenedor #mus2 #cancion3 { width:160px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus2 #cancion3:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus2 #cancion3 #imgcan3{  background: url(../img/Rudi.jpg); 
-	background-size: 75px 55px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus2 #cancion3 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus2 #cancion3 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-  
-   section #contenedor #mus2 #cancion4 { width:150px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
- 
- 	transition: all 0.5s; position: relative;
-	margin-top:30px;}
-	 section #contenedor #mus2 #cancion4:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus2 #cancion4 #imgcan4{  background: url(../img/Nero.jpg); 
-	background-size: 70px 50px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:10px;}
-	 section #contenedor #mus2 #cancion4 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:70px; 
-  }
-   section #contenedor #mus2 #cancion4 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-
-
-section #contenedor #mus3 { width:150px; margin-top:125px; float:left; text-align:center; margin-right:35px;}
-   section #contenedor #mus3 #cancion5 { width:150px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
-  
- 	transition: all 0.5s; position: relative;}
-	 section #contenedor #mus3 #cancion5:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus3 #cancion5 #imgcan5{  background: url(../img/Feint.jpg); 
-	background-size: 70px 50px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:43px; 
-	   margin-top:20px;}
-	 section #contenedor #mus3 #cancion5 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:80px; 
-  }
-   section #contenedor #mus3 #cancion5 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-  
-   section #contenedor #mus3 #cancion6 { width:150px ; height:137px;
-    background:url(../img/penta.png) ; 
- background-repeat:no-repeat ;
-  background-size:100% ;
-   border:1px solid transparent;
- 
- 	transition: all 0.5s; position: relative;
-	margin-top:30px;}
-	 section #contenedor #mus3 #cancion6:hover{ transform: scale(1.25,1.25);}
-    section #contenedor #mus3 #cancion6 #imgcan6{  background: url(../img/dj-marky.jpg); 
-	background-size: 70px 50px; background-repeat:no-repeat ;
-	 float:left;
-	  width:75px ;
-	   height:55px; 
-	   margin-left:40px; 
-	   margin-top:10px;}
-	 section #contenedor #mus3 #cancion6 h3{font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:70px; 
-  }
-   section #contenedor #mus3 #cancion6 p{font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; 
-   }
-
-	  	  
-
-.oculto1 {
-	display: none;
-}
-
-
-/*------boletas-------*/
-
-
-#fondobol { position: absolute; z-index:-1; width: 100%; height:823px ;background:url(../img/disco.png) ; background-size:cover;}
-
-#fondo4{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:823px;
-	 
-
-}
-
-section #contenedor #contbole { width:240px; list-style: none; margin-top: 190px; float:left; }
-section #contenedor #contbole2 { width:240px; list-style: none; margin-top: 190px; float:right; padding-right:30px;}
-section #contenedor #boletas1, section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{ width:210px ; 
-  float: left ; 
-   margin-top: 23px;
-  
-    padding:10px; 
-
-	transition: all 0.5s; 
-	position: relative; }
-
-	section #contenedor #boletas1 #imgbo1 { width:100px; height:70px; background: url(../img/tuboleta.png); background-repeat:no-repeat; background-size: 100%; float:left; margin-top: 10px;  }
-	section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2,section #contenedor #boletas3 #dirbo3,	section #contenedor #boletas4 #dirbo4,	section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6{ width:100px; float: right;}
-	
-
-	section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {font-size:15px;
-	 color:rgba(255,255,255,0.7);
-	  margin-top:10px; 
-	  font-weight:bold ;}
-	  
-	 section #contenedor #boletas2 #imgbo2{ width:100px;
-	  height:70px;
-	  margin-top: 10px;
-	   background: url(../img/blacout.jpg) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   }
-		 	  
-	 section #contenedor #boletas3 #imgbo3{ width:100px;
-	  height:70px;
-	   background: url(../img/bogota.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;  
-		 margin-top: 10px; }
-	  	
-    section #contenedor #boletas4 #imgbo4{ width:90px;
-	  height:70px;
-	   background: url(../img/hospital.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;  
-		 margin-top: 10px; }
-
-	  	  
-	  	
-    section #contenedor #boletas5 #imgbo5{ width:100px;
-	  height:70px;
-	   background: url(../img/reset.png) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   margin-top: 10px; }
-
-
-	  	
-    section #contenedor #boletas6 #imgbo6{ width:100px;
-	  height:70px;
-	   background: url(../img/inbassion.jpg) ; 
-	   background-repeat:no-repeat;
-	    background-size: 100% 100%;
-		 float:left;   margin-top: 10px; }
-		 
-		 
-
-
-
-
-/*--------productos---------*/
- #fondoprod {  width: 100%; height:823px ;background: url(../img/Discos.png) ; background-size:cover;}
-
-#fondo5{
-
-	 width: 100%;
-	 height:823px;
-	 
-
-}
-
-
-section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3{float: left ;width:100px; margin-top: 160px; margin-right:80px;  }
-section #contenedor #productos1{ margin-left: 35px;}
-
-section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6 { width:125px ; 
- background: rgba(0,0,0,0.8);
-  float: left ; 
-  margin-top: 30px;
-    padding:15px; 
-	box-shadow:0px 0px 15px rgba(0,0,0,1);
-	transition: all 0.5s; 
-	position: relative; text-align:center; } 
-	section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {transform: scale(1.25,1.25);}
-	
-		 section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3  { font-size:12px;
- color: rgba(255,255,255,1);
-  margin-top:15px;  }
-   section #contenedor #productos1 #produ1 p, section #contenedor #productos1 #produ2 p,section #contenedor #productos2 #produ3 p,section #contenedor #productos2 #produ4 p,section #contenedor #productos3 #produ5 p,section #contenedor #productos3 #produ6 p,section #contenedor #productos4 #produ7 p,section #contenedor #productos4 #produ8 p{ font-size:12px;
- color: rgba(255,255,255,0.8);
-  margin-top:5px; }
-  
-  
-  
-  
-  section #contenedor #productos1 #produ1 #imgpro1 { width:110px;
-	 height:118px;  
-	 background: url(../img/camisanegra1.png);
-	  background-size: 100% 100%;
-	  margin-left:0px; 
-	 }
-
-  
-	section #contenedor #productos1 #produ2 #imgpro2 { width:100px;
-	 height:108px;  
-	 background: url(../img/termos.png) ;
-	  background-size: 100% 100%;
-	  margin-left:0px; 
-	 }
-	 
-	   
-  section #contenedor #productos2 #produ3 #imgpro3 { width:130px;
-	 height:120px;  
-	 background: url(../img/camisa2.png) ;
-	  background-size: 100% 100%;
-	  margin-left:-10px; 
-	 }
-
-  
-	section #contenedor #productos2 #produ4 #imgpro4 { width:100px;
-	 height:108px;  
-	 background: url(../img/cuaderno.png) ;
-	  background-size: 100% 100%;
-	  margin-left:10px; 
-	 }
-	 
-	 
-	  section #contenedor #productos3 #produ5 #imgpro5 { width:130px;
-	 height:120px;  
-	 background: url(../img/gorra.png) ;
-	  background-size: 100% 100%;
-	  margin-left:0px; 
-	 }
-
-  
-	section #contenedor #productos3 #produ6 #imgpro6 { width:100px;
-	 height:108px;  
-	 background: url(../img/reloj1%20copia.png) ;
-	  background-size: 100% 100%;
-	  margin-left:0px; 
-	 }
-
-.oculto2 {
-	display: none;
-}
-		 
-
-
-}
-
-
-
-/*------------960px-------------------------------*/
-
-@media only screen and (min-width: 769px) and (max-width: 960px) {
-
-
-/*---home---*/
-header {
-	width: 18%;
-}
-section {
-	width: 79%;
-}
-	header #logo {width:129px; height:55px; background:url(../img/logo.jpg); background-repeat: no-repeat; background-size: 100%; margin-top:89px; margin-left:20px;}
-
-section #contenedor {width:700px; padding: 5px; margin-left: 10px; }
-
-
-section #contenedor  #ultimos{width:200px; float:left; margin-top:220px;
- 	transition: all 0.5s; position: relative;}
-
-section #contenedor #ultimos #ult1 audio ,section #contenedor #ultimos #ult2 audio ,section #contenedor #ultimos #ult3 audio{ margin-bottom:10px; width: 180px;}
-
-
-
-section #contenedor #maratones{width:200px; float:left; background: rgba(0,0,0,0.8); margin-top:295px; margin-left:25px; padding:10px;
-
- 	transition: all 0.5s; position: relative;} 
-section #contenedor #maratones audio { margin-bottom:40px; width: 180px;}
-section #contenedor #djs {width:220px; float: right; margin-top:352px; margin-left:15px; padding-left:11px; padding-bottom:25px; 
-} 
-	
-section #contenedor #djs h2{font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-
-section #contenedor #djs #dj1 h3,section #contenedor #djs #dj2 h3,section #contenedor #djs #dj3 h3{font-size:15px;  margin-top:25px; width: 100px; }
-
-footer #redes #rd1{background:url(../img/twit.png); width:20px; height:20px; background-size:100% 100%; margin-right:10px;  display: inline-block;}
-footer #redes #rd2{background:url(../img/face.png); width:20px; height:20px; background-size:100% 100%;margin-right:10px; display: inline-block;}
-footer #redes #rd3{background:url(../img/insta.png); width:20px; height:20px; background-size:100% 100%;margin-right:20px; display: inline-block;}
-
-/*-------eventos------*/
-
-#fondoeve {  width: 100%; height:920px ;background: url(../img/disco-vin.jpg)  ; background-size: 100% 100%;}
-
-#fondo2{
-
-	 width: 100%;
-	 height:920px;
-	}
-
-section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{ width:120px ; 
-
-  float: left ; 
-   margin-top: 223px;
-    padding:15px; 
-	position: relative; }
-
-section #contenedor #evento1 #imgeve1{ 
-width:115px; 
-height:100px;
- background: url(../img/EVE%201.jpg);
-  background-repeat:no-repeat;
-   background-size:100% 100% ;
-    margin: auto;
-	 margin-top:15px; }
-section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
-	 font-size:15px;
-	   margin-top:15px; 
-	   width:110px;
-	    margin-left:10px;
-		 }
-
-
- section #contenedor #evento2 {
-	  margin-left:30px;
-	   margin-top:240px;
-	   }
-section #contenedor #evento2 #imgeve2{
-	 width:115px;
-	  height:100px;
-	   background: url(../img/EVE%202.jpg);
-	 	 background-size:100% 100% ; 
-		 margin: auto;
-		  margin-top:15px; }
- section #contenedor #evento3 {
-	  margin-left:30px;
-	   margin-top:240px;
-	   }
- section #contenedor #evento3 #imgeve3{ 
- width:115px;
-  height:100px; 
-  background: url(../img/EVE%203.jpg);
-   background-repeat:no-repeat; 
-   background-size:100% 100% ; 
-   margin: auto; margin-top:15px; }
-  section #contenedor #evento4 {
-	   margin-left:30px; 
-	   margin-top:240px;}
- section #contenedor #evento4 #imgeve4{ 
- width:115px;
-  height:100px;
-   background:
-    url(../img/EVE4.jpg);
-	 background-repeat:no-repeat; 
-	 background-size:100% 100% ; 
-	 margin: auto;
-	  margin-top:15px; }
-
-
-
-
 /*musica*/
-	  #fondomus { width: 100%; height:920px ;background: url(../img/disco-musica.jpg) ; background-size:100%;}
-
-#fondo3{
-
-	 width: 100%;
-	 height:920px;
-	 
+ #fondomus {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px ;
+    background: url(../img/disco-musica.jpg) ;
+     background-size:100%;
 }
-
-section #contenedor #reproducir { width:650px; 
-   border:1px solid transparent;
-margin-top:87px;
- }
-
-
- section #contenedor #mus1 { width:160px;
-
-   margin-top:35px; 
-   float:left;
-    margin-right:15px;
-	vertical-align:center;}
-
-  
-  
-  
-  section #contenedor #mus2 { width:160px;  margin-top:100px; float:left; text-align:center; margin-right:15px;}
-
-
-section #contenedor #mus3 { width:160px; margin-top:125px; float:left; text-align:center; margin-right:15px;}
-
-section #contenedor #mus4 { width:160px;  margin-top:35px; float:left; text-align:center; margin-right:0px;}
+ #fondo3{
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px;
+     background: url(../img/colec.jpg) ;
+     background-size: cover;
+     animation-name: fondo1;
+     animation-duration: 15s;
+     animation-iteration-count:infinite;
+     -webkit-animation-name: fondo1;
+     -webkit-animation-duration: 15s;
+     -webkit-animation-iteration-count:infinite;
+     -moz-animation-name: fondo1;
+     -moz-animation-duration: 15s;
+     -moz-animation-iteration-count:infinite;
+     -ms-animation-name: fondo1;
+     -ms-animation-duration: 15s;
+     -ms-animation-iteration-count:infinite;
+     -o-animation-name: fondo1;
+     -o-animation-duration: 15s;
+     -o-animation-iteration-count:infinite;
+}
+ @keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-webkit-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-moz-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-o-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     25%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ section #contenedor #reproducir {
+     width:1030px;
+     border:1px solid transparent;
+     margin-top:87px;
+}
+ section #contenedor #reproducir #imgrepro{
+     width:230px;
+     height:160px;
+     background:url(../img/icicle.jpg);
+     background-size:100% 100%;
+     background-repeat:no-repeat;
+     float:left;
+     margin-right:30px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+}
+ section #contenedor #reproducir h3 {
+    font-size:20px;
+     color: rgba(255,255,255,1);
+     margin-top:25px;
+}
+ section #contenedor #reproducir p {
+    font-size:15px;
+     color: rgba(255,255,255,0.8);
+     margin-top:20px;
+     margin-bottom:20px;
+}
+ section #contenedor #mus1 {
+     width:160px;
+     margin-top:35px;
+     float:left;
+     margin-right:35px;
+     vertical-align:center;
+}
+ section #contenedor #mus1 #cancion1 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #mus1 #cancion1:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus1 #cancion1 #imgcan1{
+     background: url(../img/Ed.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus1 #cancion1 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+     margin-left:28px;
+}
+ section #contenedor #mus1 #cancion1 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+     margin-left:36px;
+}
+ section #contenedor #mus1 #cancion2 {
+     width:160px ;
+     height:137px;
+     margin-top:25px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent ;
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #mus1 #cancion2:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus1 #cancion2 #imgcan2{
+     background: url(../img/Seba.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus1 #cancion2 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+     margin-left:64px;
+}
+ section #contenedor #mus1 #cancion2 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+     margin-left:33px;
+}
+ section #contenedor #mus2 {
+     width:160px;
+     margin-top:100px;
+     float:left;
+     text-align:center;
+     margin-right:35px;
+}
+ section #contenedor #mus2 #cancion3 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #mus2 #cancion3:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus2 #cancion3 #imgcan3{
+     background: url(../img/Rudi.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus2 #cancion3 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus2 #cancion3 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #mus2 #cancion4 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+     margin-top:30px;
+}
+ section #contenedor #mus2 #cancion4:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus2 #cancion4 #imgcan4{
+     background: url(../img/Nero.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus2 #cancion4 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus2 #cancion4 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #mus3 {
+     width:160px;
+     margin-top:125px;
+     float:left;
+     text-align:center;
+     margin-right:35px;
+}
+ section #contenedor #mus3 #cancion5 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #mus3 #cancion5:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus3 #cancion5 #imgcan5{
+     background: url(../img/Feint.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus3 #cancion5 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus3 #cancion5 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #mus3 #cancion6 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+     margin-top:30px;
+}
+ section #contenedor #mus3 #cancion6:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus3 #cancion6 #imgcan6{
+     background: url(../img/dj-marky.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus3 #cancion6 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus3 #cancion6 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #mus4 {
+     width:160px;
+     margin-top:35px;
+     float:left;
+     text-align:center;
+     margin-right:30px;
+}
+ section #contenedor #mus4 #cancion7 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #mus4 #cancion7:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus4 #cancion7 #imgcan7{
+     background: url(../img/State%20Of%20Mind.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus4 #cancion7 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus4 #cancion7 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #mus4 #cancion8 {
+     width:160px ;
+     height:137px;
+     background:url(../img/penta.png) ;
+     background-repeat:no-repeat ;
+     background-size:100% ;
+     border:1px solid transparent;
+     transition: all 0.5s;
+     position: relative;
+     margin-top:30px;
+}
+ section #contenedor #mus4 #cancion8:hover{
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #mus4 #cancion8 #imgcan8{
+     background: url(../img/Logistics.jpg);
+     background-size: 75px 55px;
+     background-repeat:no-repeat ;
+     float:left;
+     width:75px ;
+     height:55px;
+     margin-left:43px;
+     margin-top:20px;
+}
+ section #contenedor #mus4 #cancion8 h3{
+    font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:80px;
+}
+ section #contenedor #mus4 #cancion8 p{
+    font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+/*boletas*/
+ #fondobol {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px ;
+    background:url(../img/disco.jpg) ;
+     background-size:100%;
+}
+ #fondo4{
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px;
+     background: url(../img/gram.jpg) ;
+     background-size: cover;
+     animation-name: fondo1;
+     animation-duration: 15s;
+     animation-iteration-count:infinite;
+     -webkit-animation-name: fondo1;
+     -webkit-animation-duration: 15s;
+     -webkit-animation-iteration-count:infinite;
+     -moz-animation-name: fondo1;
+     -moz-animation-duration: 15s;
+     -moz-animation-iteration-count:infinite;
+     -o-animation-name: fondo1;
+     -o-animation-duration: 15s;
+     -o-animation-iteration-count:infinite;
+}
+ @keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-webkit-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-moz-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-o-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ section #contenedor #contbole {
+     width:300px;
+     list-style: none;
+     margin-top: 190px;
+     float:left;
+}
+ section #contenedor #contbole2 {
+     width:300px;
+     list-style: none;
+     margin-top: 190px;
+     float:right;
+     padding-right:30px;
+}
+ section #contenedor #boletas1,section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{
+     width:290px ;
+     background: rgba(0,0,0,0.8);
+     float: left ;
+     margin-top: 23px;
+     padding:10px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
+}
+ section #contenedor #boletas1:hover,section #contenedor #boletas2:hover,section #contenedor #boletas3:hover,section #contenedor #boletas4:hover,section #contenedor #boletas5:hover,section #contenedor #boletas6:hover {
+     transform: scale(1.25,1.25);
+}
+ section #contenedor #boletas1 #imgbo1 {
+     width:130px;
+     height:80px;
+     background: url(../img/tuboleta.png);
+     background-repeat:no-repeat;
+     background-size: 100%;
+     float:left;
+}
+ section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2 ,section #contenedor #boletas3 #dirbo3 {
+     width:155px;
+     float:right;
+}
+ section #contenedor #boletas4 #dirbo4,section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6 {
+     width:155px;
+     float: left;
+}
+ section #contenedor #boletas1 #dirbo1 ul ,section #contenedor #boletas2 #dirbo2 ul ,section #contenedor #boletas3 #dirbo3 ul,section #contenedor #boletas4 #dirbo4 ul,section #contenedor #boletas5 #dirbo5 ul,section #contenedor #boletas6 #dirbo6 ul {
+     list-style: none;
+}
+ section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
+    font-size:15px;
+     color:rgba(255,255,255,0.7);
+     margin-top:10px;
+     font-weight:bold ;
+}
+ section #contenedor #boletas2 #imgbo2{
+     width:130px;
+     height:80px;
+     background: url(../img/blacout.jpg) ;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     float:left;
+}
+ section #contenedor #boletas3 #imgbo3{
+     width:130px;
+     height:80px;
+     background: url(../img/bogota.png) ;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     float:left;
+}
+ section #contenedor #boletas4 #imgbo4{
+     width:130px;
+     height:80px;
+     background: url(../img/hospital.png) ;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     float:left;
+}
+ section #contenedor #boletas5 #imgbo5{
+     width:130px;
+     height:80px;
+     background: url(../img/reset.png) ;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     float:left;
+}
+ section #contenedor #boletas6 #imgbo6{
+     width:130px;
+     height:80px;
+     background: url(../img/inbassion.jpg) ;
+     background-repeat:no-repeat;
+     background-size: 100% 100%;
+     float:left;
+}
+/* productos*/
+ #fondoprod {
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px ;
+    background: url(../img/Discos.jpg) ;
+     background-size:100%;
+}
+ #fondo5{
+     position: absolute;
+     z-index:-1;
+     width: 100%;
+     height:923px;
+     background: url(../img/disc.jpg) ;
+     background-size: cover;
+     animation-name: fondo1;
+     animation-duration: 15s;
+     animation-iteration-count:infinite;
+     -webkit-animation-name: fondo1;
+     -webkit-animation-duration: 15s;
+     -webkit-animation-iteration-count:infinite;
+     -moz-animation-name: fondo1;
+     -moz-animation-duration: 15s;
+     -moz-animation-iteration-count:infinite;
+     -o-animation-name: fondo1;
+     -o-animation-duration: 15s;
+     -o-animation-iteration-count:infinite;
+}
+ @keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-webkit-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-moz-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ @-o-keyframes fondo3{
+     0%{
+        opacity: 0;
+    }
+     35%{
+        opacity: 1;
+    }
+     75%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0;
+    }
+}
+ section #contenedor #productos1,section #contenedor #productos2,section #contenedor #productos3,section #contenedor #productos4 {
+    float: left ;
+    width:210px;
+     margin-top: 160px;
+     margin-right:30px;
+}
+ section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6,section #contenedor #productos4 #produ7,section #contenedor #productos4 #produ8 {
+     width:185px ;
+     background: rgba(0,0,0,0.8);
+     float: left ;
+     margin-top: 30px;
+     padding:15px;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all 0.5s;
+     position: relative;
+     text-align:center;
+}
+ section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {
+    transform: scale(1.25,1.25);
+}
+ section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3 {
+     font-size:12px;
+     color: rgba(255,255,255,1);
+     margin-top:15px;
+}
+ section #contenedor #productos1 #produ1 p, section #contenedor #productos1 #produ2 p,section #contenedor #productos2 #produ3 p,section #contenedor #productos2 #produ4 p,section #contenedor #productos3 #produ5 p,section #contenedor #productos3 #produ6 p,section #contenedor #productos4 #produ7 p,section #contenedor #productos4 #produ8 p{
+     font-size:12px;
+     color: rgba(255,255,255,0.8);
+     margin-top:5px;
+}
+ section #contenedor #productos1 #produ1 #imgpro1 {
+     width:130px;
+     height:128px;
+     background: url(../img/camisanegra1.png);
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos1 #produ2 #imgpro2 {
+     width:130px;
+     height:128px;
+     background: url(../img/termos.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos2 #produ3 #imgpro3 {
+     width:130px;
+     height:128px;
+     background: url(../img/camisa2.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos2 #produ4 #imgpro4 {
+     width:130px;
+     height:128px;
+     background: url(../img/cuaderno.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos3 #produ5 #imgpro5 {
+     width:130px;
+     height:128px;
+     background: url(../img/gorra.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos3 #produ6 #imgpro6 {
+     width:130px;
+     height:128px;
+     background: url(../img/reloj1%20copia.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos4 #produ7 #imgpro7 {
+     width:130px;
+     height:128px;
+     background: url(../img/tshirt_PNG5448%20copia.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+ section #contenedor #productos4 #produ8 #imgpro8 {
+     width:130px;
+     height:128px;
+     background: url(../img/patmouse.png) ;
+     background-size: 100% 100%;
+     margin-left:30px;
+}
+/* resposive 480*/
+ @media only screen and (max-width: 480px) {
+    /*home*/
+     #fondohome {
+         width: 100%;
+         height: 1425px;
+        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background-size:cover ;
+    }
+     #fondo1 {
+         width: 100% 100%;
+         height: 1425px;
+         background-size: cover;
+    }
+     #conteprin {
+        width: 463px;
+    }
+     header {
+        width: 462px;
+         height: 150px ;
+    }
+     header #logo {
+        width:213px;
+         height:48px;
+         background:url(../img/logo.jpg);
+         background-size: 100%;
+         padding: 0 ;
+         position: absolute;
+         left: 50%;
+         top: -50px;
+         margin-left: -106px;
+    }
+     header nav #menu {
+         width: 100%;
+         text-align: center;
+         margin-left: 0;
+    }
+     header nav {
+         width: 100%;
+    }
+     header nav #menu ul {
+        margin-right: 0;
+         margin-bottom: 0;
+         margin-top: 110px;
+    }
+     header nav #menu ul li {
+         display: inline-block;
+         margin-top: 0;
+    }
+     section #contenedor {
+        width:450px;
+         margin-bottom:4px;
+         margin-left:0px;
+         padding:20px 0 0 10px;
+    }
+     section #contenedor #ultimos{
+        width:340px;
+         float:left;
+         margin-top:20px;
+         margin-left: 25px;
+         padding-left: 11px;
+    }
+     section #contenedor #ultimos:hover {
+        transform: scale(1.15,1.15);
+    }
+     section #contenedor #maratones{
+        width:340px;
+         float:left;
+         margin-top:20px;
+         margin-left:25px;
+         padding-left:11px;
+    }
+     section #contenedor #maratones:hover {
+        transform: scale(1.15,1.15);
+    }
+     section #contenedor #djs {
+        width:340px;
+         float: left;
+         margin-top:20px;
+         margin-left:25px;
+         padding-left:11px;
+    }
+     footer #margen_footer {
+         padding-bottom: 35px;
+    }
+     section #contenedor #djs:hover{
+        transform: scale(1.15,1.15);
+    }
+     footer #redes {
+         width:110px;
+         margin-left:8px;
+    }
+     footer #redes #rd1,footer #redes #rd2,footer #redes #rd3{
+         width:20px;
+         height:20px;
+         background-size:100% 100%;
+         margin-right:5px;
+         display: inline-block;
+    }
+     footer #copy {
+         width: 150px;
+         position: absolute;
+         left: 50%;
+         margin-left: -83px;
+         text-align: center;
+         margin-top: -13px;
+    }
+     footer #log{
+        background:url(../img/logo.jpg);
+         width:110px;
+         height:30px;
+         background-size: 100% 100%;
+         position: absolute;
+         right: 20px;
+         top: 20px;
+    }
+    /*eventos*/
+     #fondoeve {
+         width: 100%;
+         height:2255px ;
+        background: url(../img/disco-vin.jpg) ;
+         background-size: cover;
+    }
+     #fondo2{
+         width: 100% ;
+         height: 2255px;
+         background-size: cover;
+    }
+     section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{
+         width:360px ;
+         margin-left: 25px;
+         margin-top: 25px;
+         padding:15px;
+         text-align: center;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #evento1:hover,section #contenedor #evento2:hover,section #contenedor #evento3:hover,section #contenedor #evento4:hover {
+         transform: scale(1.15,1.15);
+    }
+     section #contenedor #evento1 #imgeve1{
+         width:200px;
+         height:110px;
+         background: url(../img/EVE%201.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento2 #imgeve2{
+         width:200px;
+         height:110px;
+         background: url(../img/EVE%202.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento3 #imgeve3{
+         width:200px;
+         height:110px;
+         background: url(../img/EVE%203.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento4 #imgeve4{
+         width:200px;
+         height:110px;
+         background: url(../img/EVE4.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
+         width:230px;
+         margin:auto;
+         padding-top: 15px;
+    }
+     section #contenedor #evento1 #dateve1 ul ,section #contenedor #evento2 #dateve2 ul ,section #contenedor #evento3 #dateve3 ul ,section #contenedor #evento4 #dateve4 ul {
+        margin:auto;
+         width: 200px;
+    }
+     section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
+         font-size:15px;
+         width: 200px ;
+         margin:center;
+         float:left;
+         padding-top: 15px ;
+         font-weight:bold ;
+    }
+    /*musica*/
+     #fondomus {
+         width: 100%;
+         height:1230px ;
+        background: url(../img/disco-musica.jpg) ;
+         background-size:cover;
+    }
+     #fondo3{
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:1230px;
+         background: url(../img/colec.JPG) ;
+         background-size:cover;
+    }
+     section #contenedor #reproducir {
+         width:400px;
+         border:1px solid transparent;
+         margin-top:85px;
+    }
+     section #contenedor #reproducir #imgrepro{
+         width:230px;
+         height:160px;
+         background:url(../img/icicle.jpg);
+         background-size:100% 100%;
+         background-repeat:no-repeat;
+         float:left;
+         margin-right:47px;
+         margin-bottom: 15px;
+    }
+     section #contenedor #reproducir h3 {
+        font-size:15px;
+         margin-top:20px;
+    }
+     section #contenedor #reproducir p {
+        font-size:15px;
+         color: rgba(255,255,255,0.8);
+         margin-top:20px;
+         margin-bottom:20px;
+    }
+     section #contenedor #reproducir audio{
+         width: 400px;
+    }
+     section #contenedor #mus1 {
+         width:160px;
+         margin-top:35px;
+         float:left;
+         margin-right:35px;
+         vertical-align:center;
+    }
+     section #contenedor #mus2 {
+         width:160px;
+         margin-top:35px;
+         float:left;
+         margin-right:35px;
+         vertical-align:center;
+    }
+     section #contenedor #mus3 {
+         width:160px;
+         margin-top:35px;
+         float:left;
+         margin-right:35px;
+         vertical-align:center;
+    }
+    /*boletas*/
+     #fondobol {
+         width: 100%;
+         height:1315px ;
+        background:url(../img/disco.png) ;
+         background-size:cover;
+    }
+     #fondo4{
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:1315px;
+         background: url(../img/gram.png) ;
+         background-size: cover;
+    }
+     section #contenedor #contbole {
+         width:400px;
+         list-style: none;
+         margin-top: 20px;
+         float:left;
+    }
+     section #contenedor #contbole2 {
+         width:400px;
+         list-style: none;
+         margin-top: 30px;
+         float:left;
+         margin-bottom: 30px;
+    }
+     section #contenedor #boletas1,section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{
+         width:375px ;
+         margin: auto;
+         margin-top: 23px;
+         padding:25px;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #boletas1:hover,section #contenedor #boletas2:hover,section #contenedor #boletas3:hover,section #contenedor #boletas4:hover,section #contenedor #boletas5:hover,section #contenedor #boletas6:hover {
+         transform: scale(1.15,1.15);
+    }
+     section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2 ,section #contenedor #boletas3 #dirbo3, section #contenedor #boletas4 #dirbo4,section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6 {
+         width:155px;
+         float:right;
+    }
+     section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
+        font-size:20px;
+         margin-top:7px;
+         font-weight:bold ;
+    }
+    /*productos*/
+     #fondoprod {
+         width: 100%;
+         height:1144px ;
+        background: url(../img/Discos.png) ;
+         background-size:cover;
+         background-repeat: no-repeat;
+    }
+     #fondo5{
+         width: 100%;
+         height:1144px;
+         background: url(../img/disc.png) ;
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+     section #contenedor #productos1,section #contenedor #productos2,section #contenedor #productos3,section #contenedor #productos4 {
+         width:210px;
+         margin: auto;
+    }
+     section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6,section #contenedor #productos4 #produ7,section #contenedor #productos4 #produ8 {
+         width:175px ;
+         float: left ;
+         margin-top: 30px;
+         padding:8px;
+         margin-left: 10px;
+         transition: all 0.5s;
+         position: relative;
+         text-align:center;
+    }
+}
+/*----768---*/
+ @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /*home*/
+     body {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+     #fondohome {
+         width: 100%;
+         height:823px ;
+        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background-size: cover;
+    }
+     #fondo1{
+         width: 100%;
+         height:823px;
+    }
+     header {
+         width: 19%;
+         background: rgba(0,0,0,0.8);
+         display: inline-block;
+         vertical-align: top;
+    }
+     section {
+         width: 72%;
+         display: inline-block;
+    }
+     footer {
+         width: 100%;
+         background: rgba(0,0,0,0.8);
+         position: relative;
+    }
+     footer #margen_footer {
+         padding: 20px;
+    }
+     #separador {
+         clear:both ;
+    }
+     header #logo {
+        width:123px;
+         height:48px;
+         background:url(../img/logo.jpg);
+         background-repeat: no-repeat;
+         background-size: 100%;
+         margin-top:89px;
+         margin-left:10px;
+    }
+     header nav {
+        width:140px;
+    }
+     header nav ul {
+        margin-top:91px;
+         margin-right:40px;
+        list-style:none;
+         margin-bottom: 150px;
+         margin-left: -18px;
+    }
+     section #contenedor {
+        width:584px;
+         margin-bottom:4px;
+         margin-left:-10px;
+         padding:10px 10px 0 20px;
+    }
+     section #contenedor #ultimos{
+        width:280px;
+         float:left;
+         background: rgba(0,0,0,0.8);
+         margin-top:220px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #ultimos:hover {
+        transform: scale(1.25,1.25);
+    }
+     section #contenedor #ultimos #ult1 audio {
+         margin-bottom:10px;
+         width: 250px;
+    }
+     section #contenedor #ultimos #ult2 audio {
+         margin-bottom:10px;
+         width: 250px;
+    }
+     section #contenedor #ultimos #ult3 audio {
+         margin-bottom:10px;
+         width: 250px;
+    }
+     section #contenedor #maratones{
+        width:260px;
+         float:left;
+         background: rgba(0,0,0,0.8);
+         margin-top:345px;
+         margin-left:15px;
+         padding-left:11px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #maratones audio {
+         margin-bottom:40px;
+         width: 240px;
+    }
+     .oculto {
+         display: none;
+    }
+    /*eventos */
+     #fondoeve {
+         width: 100%;
+         height:823px ;
+        background: url(../img/disco-vin.jpg) ;
+         background-size: cover;
+    }
+     #fondo2{
+         width: 100%;
+         height:823px;
+         background-size: cover;
+    }
+     section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento3,section #contenedor #evento4 {
+         width:230px ;
+         height: 250px;
+         float: left ;
+         margin-top: 53px;
+         padding:10px;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #evento3{
+        margin-left: 0px;
+    }
+     section #contenedor #evento1 #imgeve1 {
+         width:100px;
+         height:90px;
+         background: url(../img/EVE%201.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         float: left;
+         margin-top:10px;
+         margin-bottom: 15px;
+    }
+     section #contenedor #evento2 #imgeve2{
+         width:100px;
+         height:90px;
+         background: url(../img/EVE%202.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         float: left;
+         margin-top:10px;
+         margin-bottom: 15px;
+    }
+     section #contenedor #evento3 #imgeve3{
+         width:100px;
+         height:90px;
+         background: url(../img/EVE%203.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         float: left;
+         margin-top:15px;
+         margin-bottom: 15px;
+    }
+     section #contenedor #evento4 #imgeve4{
+         width:100px;
+         height:90px;
+         background: url(../img/EVE4.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         float: left;
+         margin-top:15px;
+         margin-bottom: 15px;
+    }
+     section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1 {
+         font-size:13px;
+         margin-top:38px;
+         width:120px;
+         margin-left:115px;
+    }
+     section #contenedor #evento1 #artiseve1 h2,section #contenedor #evento2 #artiseve2 h2,section #contenedor #evento3 #artiseve3 h2,section #contenedor #evento4 #artiseve4 h2{
+         width: 100px;
+         font-size:12px;
+    }
+     section #contenedor #evento1 #artiseve1 ul li,section #contenedor #evento2 #artiseve2 ul li,section #contenedor #evento3 #artiseve3 ul li,section #contenedor #evento4 #artiseve4 ul li {
+         font-size:13px;
+         margin-top:10px;
+         margin-left: 10px;
+    }
+     section #contenedor #evento1 #dateve1,section #contenedor #evento2 #dateve2,section #contenedor #evento3 #dateve3, section #contenedor #evento4 #dateve4 {
+         width: 100px;
+         margin-top: -150px;
+         float: right;
+         margin-left: 10px;
+    }
+     section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
+         font-size:15px;
+         color:rgba(255,255,255,0.7);
+         margin-top:10px;
+         float:left;
+         font-weight:bold ;
+         width: 100px;
+    }
+    /*------musica 768px-------*/
+     #fondomus {
+         width: 100%;
+         height:823px ;
+        background-repeat: no-repeat;
+         background: url(../img/disco-musica.jpg) ;
+         background-size:cover;
+    }
+     #fondo3{
+         background-repeat: no-repeat;
+         width: 100%;
+         height:823px;
+         background-size: cover;
+    }
+     section #contenedor #reproducir {
+         width:500px;
+         border:1px solid transparent;
+         margin-top:78px;
+    }
+     section #contenedor #reproducir #imgrepro{
+         width:200px;
+         height:160px;
+         background:url(../img/icicle.jpg);
+         background-size:100% 100%;
+         background-repeat:no-repeat;
+         margin-right:30px;
+    }
+     section #contenedor #reproducir h3 {
+        font-size:20px;
+         color: rgba(255,255,255,1);
+         margin-top:25px;
+    }
+     section #contenedor #reproducir p {
+        font-size:15px;
+         color: rgba(255,255,255,0.8);
+         margin-top:20px;
+         margin-bottom:20px;
+    }
+     section #contenedor #reproducir audio {
+         width: 268px;
+         margin-top: 10px;
+    }
+     section #contenedor #mus1 {
+         width:150px;
+         margin-top:35px;
+         float:left;
+         margin-right:5px;
+         vertical-align:center;
+    }
+     section #contenedor #mus1 #cancion1 {
+         width:150px ;
+         height:137px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #mus1 #cancion1:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus1 #cancion1 #imgcan1{
+         background: url(../img/Ed.jpg);
+         background-size: 70px 50px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:40px;
+         margin-top:10px;
+    }
+     section #contenedor #mus1 #cancion1 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:70px;
+         margin-left:18px;
+    }
+     section #contenedor #mus1 #cancion1 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+         margin-left:26px;
+    }
+     section #contenedor #mus1 #cancion2 {
+         width:150px ;
+         height:137px;
+         margin-top:25px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent ;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #mus1 #cancion2:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus1 #cancion2 #imgcan2{
+         background: url(../img/Seba.jpg);
+         background-size: 75px 55px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:38px;
+         margin-top:10px;
+    }
+     section #contenedor #mus1 #cancion2 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:70px;
+         margin-left:64px;
+    }
+     section #contenedor #mus1 #cancion2 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+         margin-left:28px;
+    }
+     section #contenedor #mus2 {
+         width:150px;
+         margin-top:100px;
+         float:left;
+         text-align:center;
+         margin-right:35px;
+    }
+     section #contenedor #mus2 #cancion3 {
+         width:160px ;
+         height:137px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #mus2 #cancion3:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus2 #cancion3 #imgcan3{
+         background: url(../img/Rudi.jpg);
+         background-size: 75px 55px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:43px;
+         margin-top:20px;
+    }
+     section #contenedor #mus2 #cancion3 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:80px;
+    }
+     section #contenedor #mus2 #cancion3 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+    }
+     section #contenedor #mus2 #cancion4 {
+         width:150px ;
+         height:137px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent;
+         transition: all 0.5s;
+         position: relative;
+         margin-top:30px;
+    }
+     section #contenedor #mus2 #cancion4:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus2 #cancion4 #imgcan4{
+         background: url(../img/Nero.jpg);
+         background-size: 70px 50px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:43px;
+         margin-top:10px;
+    }
+     section #contenedor #mus2 #cancion4 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:70px;
+    }
+     section #contenedor #mus2 #cancion4 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+    }
+     section #contenedor #mus3 {
+         width:150px;
+         margin-top:125px;
+         float:left;
+         text-align:center;
+         margin-right:35px;
+    }
+     section #contenedor #mus3 #cancion5 {
+         width:150px ;
+         height:137px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #mus3 #cancion5:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus3 #cancion5 #imgcan5{
+         background: url(../img/Feint.jpg);
+         background-size: 70px 50px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:43px;
+         margin-top:20px;
+    }
+     section #contenedor #mus3 #cancion5 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:80px;
+    }
+     section #contenedor #mus3 #cancion5 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+    }
+     section #contenedor #mus3 #cancion6 {
+         width:150px ;
+         height:137px;
+         background:url(../img/penta.png) ;
+         background-repeat:no-repeat ;
+         background-size:100% ;
+         border:1px solid transparent;
+         transition: all 0.5s;
+         position: relative;
+         margin-top:30px;
+    }
+     section #contenedor #mus3 #cancion6:hover{
+         transform: scale(1.25,1.25);
+    }
+     section #contenedor #mus3 #cancion6 #imgcan6{
+         background: url(../img/dj-marky.jpg);
+         background-size: 70px 50px;
+         background-repeat:no-repeat ;
+         float:left;
+         width:75px ;
+         height:55px;
+         margin-left:40px;
+         margin-top:10px;
+    }
+     section #contenedor #mus3 #cancion6 h3{
+        font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:70px;
+    }
+     section #contenedor #mus3 #cancion6 p{
+        font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+    }
+     .oculto1 {
+         display: none;
+    }
+    /*------boletas-------*/
+     #fondobol {
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:823px ;
+        background:url(../img/disco.png) ;
+         background-size:cover;
+    }
+     #fondo4{
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:823px;
+    }
+     section #contenedor #contbole {
+         width:240px;
+         list-style: none;
+         margin-top: 190px;
+         float:left;
+    }
+     section #contenedor #contbole2 {
+         width:240px;
+         list-style: none;
+         margin-top: 190px;
+         float:right;
+         padding-right:30px;
+    }
+     section #contenedor #boletas1, section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{
+         width:210px ;
+         float: left ;
+         margin-top: 23px;
+         padding:10px;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #boletas1 #imgbo1 {
+         width:100px;
+         height:70px;
+         background: url(../img/tuboleta.png);
+         background-repeat:no-repeat;
+         background-size: 100%;
+         float:left;
+         margin-top: 10px;
+    }
+     section #contenedor #boletas1 #dirbo1, section #contenedor #boletas2 #dirbo2,section #contenedor #boletas3 #dirbo3, section #contenedor #boletas4 #dirbo4, section #contenedor #boletas5 #dirbo5,section #contenedor #boletas6 #dirbo6{
+         width:100px;
+         float: right;
+    }
+     section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
+        font-size:15px;
+         color:rgba(255,255,255,0.7);
+         margin-top:10px;
+         font-weight:bold ;
+    }
+     section #contenedor #boletas2 #imgbo2{
+         width:100px;
+         height:70px;
+         margin-top: 10px;
+         background: url(../img/blacout.jpg) ;
+         background-repeat:no-repeat;
+         background-size: 100% 100%;
+         float:left;
+    }
+     section #contenedor #boletas3 #imgbo3{
+         width:100px;
+         height:70px;
+         background: url(../img/bogota.png) ;
+         background-repeat:no-repeat;
+         background-size: 100% 100%;
+         float:left;
+         margin-top: 10px;
+    }
+     section #contenedor #boletas4 #imgbo4{
+         width:90px;
+         height:70px;
+         background: url(../img/hospital.png) ;
+         background-repeat:no-repeat;
+         background-size: 100% 100%;
+         float:left;
+         margin-top: 10px;
+    }
+     section #contenedor #boletas5 #imgbo5{
+         width:100px;
+         height:70px;
+         background: url(../img/reset.png) ;
+         background-repeat:no-repeat;
+         background-size: 100% 100%;
+         float:left;
+         margin-top: 10px;
+    }
+     section #contenedor #boletas6 #imgbo6{
+         width:100px;
+         height:70px;
+         background: url(../img/inbassion.jpg) ;
+         background-repeat:no-repeat;
+         background-size: 100% 100%;
+         float:left;
+         margin-top: 10px;
+    }
+    /*--------productos---------*/
+     #fondoprod {
+         width: 100%;
+         height:823px ;
+        background: url(../img/Discos.png) ;
+         background-size:cover;
+    }
+     #fondo5{
+         width: 100%;
+         height:823px;
+    }
+     section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3{
+        float: left ;
+        width:100px;
+         margin-top: 160px;
+         margin-right:80px;
+    }
+     section #contenedor #productos1{
+         margin-left: 35px;
+    }
+     section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6 {
+         width:125px ;
+         background: rgba(0,0,0,0.8);
+         float: left ;
+         margin-top: 30px;
+         padding:15px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+         text-align:center;
+    }
+     section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {
+        transform: scale(1.25,1.25);
+    }
+     section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3 {
+         font-size:12px;
+         color: rgba(255,255,255,1);
+         margin-top:15px;
+    }
+     section #contenedor #productos1 #produ1 p, section #contenedor #productos1 #produ2 p,section #contenedor #productos2 #produ3 p,section #contenedor #productos2 #produ4 p,section #contenedor #productos3 #produ5 p,section #contenedor #productos3 #produ6 p,section #contenedor #productos4 #produ7 p,section #contenedor #productos4 #produ8 p{
+         font-size:12px;
+         color: rgba(255,255,255,0.8);
+         margin-top:5px;
+    }
+     section #contenedor #productos1 #produ1 #imgpro1 {
+         width:110px;
+         height:118px;
+         background: url(../img/camisanegra1.png);
+         background-size: 100% 100%;
+         margin-left:0px;
+    }
+     section #contenedor #productos1 #produ2 #imgpro2 {
+         width:100px;
+         height:108px;
+         background: url(../img/termos.png) ;
+         background-size: 100% 100%;
+         margin-left:0px;
+    }
+     section #contenedor #productos2 #produ3 #imgpro3 {
+         width:130px;
+         height:120px;
+         background: url(../img/camisa2.png) ;
+         background-size: 100% 100%;
+         margin-left:-10px;
+    }
+     section #contenedor #productos2 #produ4 #imgpro4 {
+         width:100px;
+         height:108px;
+         background: url(../img/cuaderno.png) ;
+         background-size: 100% 100%;
+         margin-left:10px;
+    }
+     section #contenedor #productos3 #produ5 #imgpro5 {
+         width:130px;
+         height:120px;
+         background: url(../img/gorra.png) ;
+         background-size: 100% 100%;
+         margin-left:0px;
+    }
+     section #contenedor #productos3 #produ6 #imgpro6 {
+         width:100px;
+         height:108px;
+         background: url(../img/reloj1%20copia.png) ;
+         background-size: 100% 100%;
+         margin-left:0px;
+    }
+     .oculto2 {
+         display: none;
+    }
+}
+/*------------960px-------------------------------*/
+ @media only screen and (min-width: 769px) and (max-width: 960px) {
+    /*---home---*/
+     header {
+         width: 18%;
+    }
+     section {
+         width: 79%;
+    }
+     header #logo {
+        width:129px;
+         height:55px;
+         background:url(../img/logo.jpg);
+         background-repeat: no-repeat;
+         background-size: 100%;
+         margin-top:89px;
+         margin-left:20px;
+    }
+     section #contenedor {
+        width:700px;
+         padding: 5px;
+         margin-left: 10px;
+    }
+     section #contenedor #ultimos{
+        width:200px;
+         float:left;
+         margin-top:220px;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #ultimos #ult1 audio ,section #contenedor #ultimos #ult2 audio ,section #contenedor #ultimos #ult3 audio{
+         margin-bottom:10px;
+         width: 180px;
+    }
+     section #contenedor #maratones{
+        width:200px;
+         float:left;
+         background: rgba(0,0,0,0.8);
+         margin-top:295px;
+         margin-left:25px;
+         padding:10px;
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #maratones audio {
+         margin-bottom:40px;
+         width: 180px;
+    }
+     section #contenedor #djs {
+        width:220px;
+         float: right;
+         margin-top:352px;
+         margin-left:15px;
+         padding-left:11px;
+         padding-bottom:25px;
+    }
+     section #contenedor #djs h2{
+        font-size:15px;
+         color:rgba(255,170,0,1);
+        background:url(../img/vineta1.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        padding-left:15px;
+         margin-top:18px;
+         margin-bottom:20px;
+         margin-left:11px;
+    }
+     section #contenedor #djs #dj1 h3,section #contenedor #djs #dj2 h3,section #contenedor #djs #dj3 h3{
+        font-size:15px;
+         margin-top:25px;
+         width: 100px;
+    }
+     footer #redes #rd1{
+        background:url(../img/twit.png);
+         width:20px;
+         height:20px;
+         background-size:100% 100%;
+         margin-right:10px;
+         display: inline-block;
+    }
+     footer #redes #rd2{
+        background:url(../img/face.png);
+         width:20px;
+         height:20px;
+         background-size:100% 100%;
+        margin-right:10px;
+         display: inline-block;
+    }
+     footer #redes #rd3{
+        background:url(../img/insta.png);
+         width:20px;
+         height:20px;
+         background-size:100% 100%;
+        margin-right:20px;
+         display: inline-block;
+    }
+    /*-------eventos------*/
+     #fondoeve {
+         width: 100%;
+         height:920px ;
+        background: url(../img/disco-vin.jpg) ;
+         background-size: 100% 100%;
+    }
+     #fondo2{
+         width: 100%;
+         height:920px;
+    }
+     section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{
+         width:120px ;
+         float: left ;
+         margin-top: 223px;
+         padding:15px;
+         position: relative;
+    }
+     section #contenedor #evento1 #imgeve1{
+         width:115px;
+         height:100px;
+         background: url(../img/EVE%201.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento1 #nomeve1 h1,section #contenedor #evento2 #nomeve2 h1,section #contenedor #evento3 #nomeve3 h1,section #contenedor #evento4 #nomeve4 h1{
+         font-size:15px;
+         margin-top:15px;
+         width:110px;
+         margin-left:10px;
+    }
+     section #contenedor #evento2 {
+         margin-left:30px;
+         margin-top:240px;
+    }
+     section #contenedor #evento2 #imgeve2{
+         width:115px;
+         height:100px;
+         background: url(../img/EVE%202.jpg);
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento3 {
+         margin-left:30px;
+         margin-top:240px;
+    }
+     section #contenedor #evento3 #imgeve3{
+         width:115px;
+         height:100px;
+         background: url(../img/EVE%203.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+     section #contenedor #evento4 {
+         margin-left:30px;
+         margin-top:240px;
+    }
+     section #contenedor #evento4 #imgeve4{
+         width:115px;
+         height:100px;
+         background: url(../img/EVE4.jpg);
+         background-repeat:no-repeat;
+         background-size:100% 100% ;
+         margin: auto;
+         margin-top:15px;
+    }
+    /*musica*/
+     #fondomus {
+         width: 100%;
+         height:920px ;
+        background: url(../img/disco-musica.jpg) ;
+         background-size:100%;
+    }
+     #fondo3{
+         width: 100%;
+         height:920px;
+    }
+     section #contenedor #reproducir {
+         width:650px;
+         border:1px solid transparent;
+         margin-top:87px;
+    }
+     section #contenedor #mus1 {
+         width:160px;
+         margin-top:35px;
+         float:left;
+         margin-right:15px;
+         vertical-align:center;
+    }
+     section #contenedor #mus2 {
+         width:160px;
+         margin-top:100px;
+         float:left;
+         text-align:center;
+         margin-right:15px;
+    }
+     section #contenedor #mus3 {
+         width:160px;
+         margin-top:125px;
+         float:left;
+         text-align:center;
+         margin-right:15px;
+    }
+     section #contenedor #mus4 {
+         width:160px;
+         margin-top:35px;
+         float:left;
+         text-align:center;
+         margin-right:0px;
+    }
+    /*----boletas----*/
+     #fondobol {
+         width: 100%;
+         height:920px ;
+        background:url(../img/disco.png) ;
+         background-size:cover;
+    }
+     #fondo4{
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:920px;
+    }
+     section #contenedor #boletas1, section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{
+         width:290px ;
+         float: left ;
+         margin-top: 23px;
+         padding:10px;
+         transition: all 0.5s;
+         position: relative;
+         margin-bottom: 35px;
+    }
+     section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
+        font-size:15px;
+         color:rgba(255,255,255,0.7);
+         margin-top:10px;
+         font-weight:bold ;
+        margin-left: 10px;
+    }
+    /*productos*/
+     #fondoprod {
+         width: 100%;
+         height:920px ;
+        background: url(../img/Discos.png) ;
+         background-size:cover;
+    }
+     #fondo5{
+         width: 100%;
+         height:920px;
+    }
+     section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3, section #contenedor .oculto2 #productos4 {
+        float: left ;
+        width:150px;
+         margin-top: 160px;
+         margin-right:25px;
+    }
+     section #contenedor #productos1{
+         margin-left: 25px;
+    }
+     section #contenedor .oculto2 #productos4{
+         margin-right: 0;
+    }
+     section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6, section #contenedor .oculto2 #productos4 #produ7, section #contenedor .oculto2 #productos4 #produ8{
+         width:140px ;
+         background: rgba(0,0,0,0.8);
+         float: left ;
+         margin-top: 30px;
+         padding:10px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+         text-align:center;
+    }
+     section #contenedor #productos1 #produ1 #imgpro1 {
+         width:110px;
+         height:118px;
+         background: url(../img/camisanegra1.png);
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos1 #produ2 #imgpro2 {
+         width:100px;
+         height:108px;
+         background: url(../img/termos.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos2 #produ3 #imgpro3 {
+         width:130px;
+         height:120px;
+         background: url(../img/camisa2.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos2 #produ4 #imgpro4 {
+         width:100px;
+         height:108px;
+         background: url(../img/cuaderno.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos3 #produ5 #imgpro5 {
+         width:130px;
+         height:120px;
+         background: url(../img/gorra.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos3 #produ6 #imgpro6 {
+         width:100px;
+         height:108px;
+         background: url(../img/reloj1%20copia.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos4 #produ7 #imgpro7 {
+         width:130px;
+         height:120px;
+         background: url(../img/tshirt_PNG5448%20copia.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+     section #contenedor #productos4 #produ8 #imgpro8 {
+         width:130px;
+         height:108px;
+         background: url(../img/patmouse.png) ;
+         background-size: 100% 100%;
+         margin: auto;
+    }
+}
+ @media only screen and (min-width: 961px) and (max-width: 1024px) {
+     #fondohome {
+        width: 100%;
+         height:900px ;
+        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background-size: cover;
+    }
+     #fondo1{
+         position: absolute;
+         z-index:-1;
+         width: 100%;
+         height:900px;
+    }
+     header {
+         width: 15%;
+         background: rgba(0,0,0,0.8);
+         display: inline-block;
+         vertical-align: top;
+    }
+     section {
+         width: 82%;
+         display: inline-block;
+    }
+     footer {
+         width: 100%;
+         background: rgba(0,0,0,0.8);
+         position: relative;
+    }
+     footer #margen_footer {
+         padding: 20px;
+    }
+     #separador {
+         clear:both ;
+    }
+     header #logo {
+        width:213px;
+         height:48px;
+         background:url(../img/logo.jpg);
+         background-size: 100%;
+         margin-top:89px;
+         margin-left:13px;
+    }
+     header nav {
+        width:140px;
+    }
+     header nav #menu {
+         margin-left: 30px;
+    }
+     header nav ul {
+        margin-top:91px;
+         margin-right:40px;
+        list-style:none;
+         margin-bottom: 100px;
+    }
+     header nav ul li {
+         margin-top:70px;
+    }
+     header nav ul a {
+         background:url(../img/vineta_03.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        text-decoration:none;
+        color:#43FF24;
+        font-size:14px;
+         padding-left:15px;
+         padding: 10px;
+    }
+     header nav ul li a:hover, header nav ul li a:active {
+        background: rgba(0,0,0,0.9);
+        border-radius:2px;
+    }
+     section #contenedor {
+        width:1054px;
+         margin-bottom:4px;
+         margin-left:60px;
+         padding:30px 30px 0 30px;
+    }
+     section #contenedor #ultimos{
+        width:325px;
+         float:left;
+         background: rgba(0,0,0,0.8);
+         margin-top:220px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #ultimos:hover {
+        transform: scale(1.25,1.25);
+    }
+     section #contenedor #ultimos h2 {
+        font-size:15px;
+         color:rgba(255,170,0,1);
+        background:url(../img/vineta1.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        padding-left:15px;
+         margin-top:18px;
+         margin-bottom:20px;
+         margin-left:11px;
+    }
+     section #contenedor #ultimos #ult1{
+         width:200px;
+         margin-left:11px;
+    }
+     section #contenedor #ultimos #ult1 #imgul1 {
+         background:url(../img/Pendulun.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+         margin-bottom:15px;
+    }
+     section #contenedor #ultimos #ult1 h3 {
+         font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+    }
+     section #contenedor #ultimos #ult1 p{
+         font-size:14px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+        margin-left:95px;
+    }
+     section #contenedor #ultimos #ult1 audio {
+         margin-bottom:10px;
+    }
+     section #contenedor #ultimos #ult2{
+         width:200px;
+         margin-left:11px;
+    }
+     section #contenedor #ultimos #ult2 #imgul2 {
+         background:url(../img/Netsky.png);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px
+    }
+     section #contenedor #ultimos #ult2 h3 {
+         font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+    }
+     section #contenedor #ultimos #ult2 p{
+         font-size:14px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+        margin-left:95px;
+    }
+     section #contenedor #ultimos #ult2 audio {
+         margin-bottom:10px;
+    }
+     section #contenedor #ultimos #ult3{
+         width:200px;
+         margin-left:11px;
+         margin-bottom:20px;
+    }
+     section #contenedor #ultimos #ult3 #imgul3 {
+         background:url(../img/DJFresh.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px
+    }
+     section #contenedor #ultimos #ult3 h3 {
+         font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+    }
+     section #contenedor #ultimos #ult3 p{
+         font-size:14px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+        margin-left:95px;
+    }
+     section #contenedor #ultimos #ult3 audio {
+         margin-bottom:10px;
+    }
+     section #contenedor #maratones{
+        width:325px;
+         float:left;
+         background: rgba(0,0,0,0.8);
+         margin-top:364px;
+         margin-left:30px;
+         padding-left:11px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #maratones:hover {
+        transform: scale(1.25,1.25);
+    }
+     section #contenedor #maratones #mara1 {
+         margin-bottom:55px;
+    }
+     section #contenedor #maratones #mara1 #imgmara{
+         background:url(../img/STEALTH.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px
+    }
+     section #contenedor #maratones h2{
+        font-size:15px;
+         color:rgba(255,170,0,1);
+        background:url(../img/vineta1.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        padding-left:15px;
+         margin-top:18px;
+         margin-bottom:20px;
+         margin-left:11px;
+    }
+     section #contenedor #maratones #mara2 #imgmara1{
+         background:url(../img/fabric.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px
+    }
+     section #contenedor #maratones h3 {
+         font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+    }
+     section #contenedor #maratones p {
+         font-size:14px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+        margin-left:95px;
+         padding-right:15px;
+    }
+     section #contenedor #maratones audio {
+         margin-bottom:40px;
+    }
+     section #contenedor #djs {
+        width:315px;
+         float: right;
+         background: rgba(0,0,0,0.8);
+         margin-top:352px;
+         margin-left:30px;
+         padding-left:11px;
+         padding-bottom:25px;
+         box-shadow:0px 0px 15px rgba(0,0,0,1);
+         transition: all 0.5s;
+         position: relative;
+    }
+     section #contenedor #djs:hover{
+        transform: scale(1.25,1.25);
+    }
+     section #contenedor #djs h2{
+        font-size:15px;
+         color:rgba(255,170,0,1);
+        background:url(../img/vineta1.png);
+        background-repeat:no-repeat;
+        background-position:left;
+        padding-left:15px;
+         margin-top:18px;
+         margin-bottom:20px;
+         margin-left:11px;
+    }
+     section #contenedor #djs #dj1 {
+         margin-bottom:-66px ;
+         float:left;
+         width:250px;
+    }
+     section #contenedor #djs #dj1 #imgdj1{
+        background:url(../img/icicle.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px 
+    }
+     section #contenedor #djs #dj1 h3{
+        font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+         margin-top:25px;
+    }
+     section #contenedor #djs #dj2 {
+         margin-bottom:10px ;
+         float:left;
+         margin-top:65px;
+        width:250px;
+    }
+     section #contenedor #djs #dj2 #imgdj2{
+        background:url(../img/xlarge.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+        margin-bottom:15px 
+    }
+     section #contenedor #djs #dj2 h3{
+        font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:95px;
+         margin-top:25px;
+    }
+     section #contenedor #djs #dj3 {
+         margin-bottom:95px;
+        width:250px;
+    }
+     section #contenedor #djs #dj3 #imgdj3{
+        background:url(../img/dirty.jpg);
+         width:85px;
+         height:70px;
+         float:left;
+         background-size: 100% 100%;
+         background-repeat:no-repeat;
+    }
+     section #contenedor #djs #dj3 h3{
+        font-size:15px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7) ;
+         margin-left:10px;
+         margin-top:25px;
+         float:left;
+    }
+     footer #redes {
+         width:140px;
+         margin-left:20px;
+         display: inline-block;
+    }
+     footer #redes #rd1{
+        background:url(../img/twit.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+         margin-right:10px;
+         display: inline-block;
+    }
+     footer #redes #rd2{
+        background:url(../img/face.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+        margin-right:10px;
+         display: inline-block;
+    }
+     footer #redes #rd3{
+        background:url(../img/insta.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+        margin-right:20px;
+         display: inline-block;
+    }
+     footer #copy {
+        display: inline-block;
+         width: 350px;
+         position: absolute;
+         left: 50%;
+         margin-left: -175px;
+         text-align: center;
+    }
+     footer #copy p {
+        font-size:10px;
+         font-style:normal;
+         color:rgba(255,255,255,0.7);
+         margin-top:10px;
+        ;
+         float:left;
+    }
+     footer #log{
+        background:url(../img/logo.jpg);
+         width:110px;
+         height:30px;
+         background-size: 100% 100%;
+         position: absolute;
+         right: 20px;
+         top: 20px;
+    }
+}
  
-   
-   /*----boletas----*/
-
-#fondobol { width: 100%; height:920px ;background:url(../img/disco.png) ; background-size:cover;}
-
-#fondo4{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:920px;
-
-	 
-
-}
-section #contenedor #boletas1, section #contenedor #boletas2,section #contenedor #boletas3,section #contenedor #boletas4,section #contenedor #boletas5,section #contenedor #boletas6{ width:290px ; 
-  float: left ; 
-   margin-top: 23px;
-  
-    padding:10px; 
-
-	transition: all 0.5s; 
-	position: relative;
-	margin-bottom: 35px; 
-}   
-
-	section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {font-size:15px;
-	 color:rgba(255,255,255,0.7);
-	  margin-top:10px; 
-	  font-weight:bold ;margin-left: 10px;}
-
-
-
-	  /*productos*/
-
-	   #fondoprod {  width: 100%; height:920px ;background: url(../img/Discos.png) ; background-size:cover;}
-
-#fondo5{
-
-	 width: 100%;
-	 height:920px;
-	 
-
-}
-
-
-	  section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3, section #contenedor .oculto2 #productos4 {float: left ;width:150px; margin-top: 160px; margin-right:25px;  }
-  section #contenedor #productos1{
-  	margin-left: 25px;
-  }
-	section #contenedor .oculto2 #productos4{
-	  	margin-right: 0;
-	  }
-section #contenedor #productos1 #produ1,section #contenedor #productos1 #produ2,section #contenedor #productos2 #produ3,section #contenedor #productos2 #produ4,section #contenedor #productos3 #produ5,section #contenedor #productos3 #produ6, section #contenedor .oculto2 #productos4 #produ7, section #contenedor .oculto2 #productos4 #produ8{ width:140px ; 
- background: rgba(0,0,0,0.8);
-  float: left ; 
-  margin-top: 30px;
-    padding:10px; 
-	box-shadow:0px 0px 15px rgba(0,0,0,1);
-	transition: all 0.5s; 
-	position: relative; text-align:center; } 
-
-	 section #contenedor #productos1 #produ1 #imgpro1 { width:110px;
-	 height:118px;  
-	 background: url(../img/camisanegra1.png);
-	  background-size: 100% 100%;
-	 margin: auto; 
-	 }
-
-  
-	section #contenedor #productos1 #produ2 #imgpro2 { width:100px;
-	 height:108px;  
-	 background: url(../img/termos.png) ;
-	  background-size: 100% 100%;
-	 margin: auto; 
-	 }
-	 
-	   
-  section #contenedor #productos2 #produ3 #imgpro3 { width:130px;
-	 height:120px;  
-	 background: url(../img/camisa2.png) ;
-	  background-size: 100% 100%;
-	 margin: auto;  
-	 }
-
-  
-	section #contenedor #productos2 #produ4 #imgpro4 { width:100px;
-	 height:108px;  
-	 background: url(../img/cuaderno.png) ;
-	  background-size: 100% 100%;
- margin: auto;  
-	 }
-	 
-	 
-	  section #contenedor #productos3 #produ5 #imgpro5 { width:130px;
-	 height:120px;  
-	 background: url(../img/gorra.png) ;
-	  background-size: 100% 100%;
-	  margin: auto; 
-	 }
-
-  
-	section #contenedor #productos3 #produ6 #imgpro6 { width:100px;
-	 height:108px;  
-	 background: url(../img/reloj1%20copia.png) ;
-	  background-size: 100% 100%;
-	 margin: auto; 
-	 }
-
-
-	    section #contenedor #productos4 #produ7 #imgpro7 { width:130px;
-	 height:120px;  
-	 background: url(../img/tshirt_PNG5448%20copia.png) ;
-	  background-size: 100% 100%;
-	 margin: auto;  
-	 }
-
-  
-	section #contenedor #productos4 #produ8 #imgpro8 { width:130px;
-	 height:108px;  
-	 background: url(../img/patmouse.png)  ;
-	  background-size: 100% 100%;
-	 margin: auto; 
-	 }
-
-	 
-
-}
-
-
-
-
-@media only screen and (min-width: 961px) and (max-width: 1024px) {
-
-
-	#fondohome {width: 100%; height:900px ;background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ; background-size: cover;}
-
-#fondo1{
-	 position: absolute;
-	 z-index:-1;
-	 width: 100%;
-	 height:900px;
-
-	 
-}
-
-
-header {
-	width: 15%;
-	background: rgba(0,0,0,0.8);
-	display: inline-block;
-	vertical-align: top;
-}
-
-section {
-	width: 82%;
-	display: inline-block;
-	}
-
-footer {
-	width: 100%;
-	background: rgba(0,0,0,0.8);
-	position: relative;
-}
-
-footer #margen_footer {
-	padding: 20px;
-}
-
-#separador { clear:both ;}
-header #logo {width:213px; height:48px; background:url(../img/logo.jpg); background-size: 100%; margin-top:89px; margin-left:13px;}
-header nav {width:140px;  }
-header nav #menu { margin-left: 30px; }
-header nav ul {margin-top:91px; margin-right:40px;list-style:none; margin-bottom: 100px;}
-header nav ul li {  margin-top:70px; }
-header nav ul a { background:url(../img/vineta_03.png);background-repeat:no-repeat;background-position:left;text-decoration:none;color:#43FF24;font-size:14px; padding-left:15px; padding: 10px;}
-header nav ul li a:hover, header nav ul li a:active {background: rgba(0,0,0,0.9);border-radius:2px;}
-section #contenedor {width:1054px; margin-bottom:4px; margin-left:60px; padding:30px 30px 0 30px;}
-section #contenedor  #ultimos{width:325px; float:left; background: rgba(0,0,0,0.8); margin-top:220px;
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;}
-	section #contenedor  #ultimos:hover {transform: scale(1.25,1.25);}
-section #contenedor  #ultimos h2 {font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #contenedor #ultimos #ult1{ width:200px; margin-left:11px;}
-section #contenedor #ultimos #ult1 #imgul1 { background:url(../img/Pendulun.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat; margin-bottom:15px;}
-section #contenedor #ultimos #ult1  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #contenedor #ultimos #ult1  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #contenedor #ultimos #ult1 audio { margin-bottom:10px;}
-
-section #contenedor #ultimos #ult2{ width:200px; margin-left:11px;}
-section #contenedor #ultimos #ult2 #imgul2 { background:url(../img/Netsky.png); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #contenedor #ultimos #ult2  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #contenedor #ultimos #ult2  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #contenedor #ultimos #ult2 audio { margin-bottom:10px;}
-
-section #contenedor #ultimos #ult3{ width:200px; margin-left:11px; margin-bottom:20px;}
-section #contenedor #ultimos #ult3 #imgul3 { background:url(../img/DJFresh.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #contenedor #ultimos #ult3  h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #contenedor #ultimos #ult3  p{ font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px;}
-section #contenedor #ultimos #ult3 audio { margin-bottom:10px;}
-
-section #contenedor #maratones{width:325px; float:left; background: rgba(0,0,0,0.8); margin-top:364px; margin-left:30px; padding-left:11px;
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;} 
-	section #contenedor #maratones:hover {transform: scale(1.25,1.25);}
-section #contenedor #maratones #mara1  { margin-bottom:55px;}
-section #contenedor #maratones #mara1 #imgmara{  background:url(../img/STEALTH.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #contenedor #maratones  h2{font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #contenedor #maratones #mara2 #imgmara1{  background:url(../img/fabric.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px}
-section #contenedor #maratones h3 { font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px;}
-section #contenedor #maratones p { font-size:14px; font-style:normal; color:rgba(255,255,255,0.7) ;margin-left:95px; padding-right:15px;}
-section #contenedor #maratones audio { margin-bottom:40px;}
-section #contenedor #djs {width:315px; float: right; background: rgba(0,0,0,0.8); margin-top:352px; margin-left:30px; padding-left:11px; padding-bottom:25px; 
-box-shadow:0px 0px 15px rgba(0,0,0,1);
- 	transition: all 0.5s; position: relative;} 
-	section #contenedor #djs:hover{transform: scale(1.25,1.25);}
-section #contenedor #djs h2{font-size:15px; color:rgba(255,170,0,1);background:url(../img/vineta1.png);background-repeat:no-repeat;background-position:left;padding-left:15px; margin-top:18px; margin-bottom:20px; margin-left:11px;}
-section #contenedor #djs #dj1 { margin-bottom:-66px ; float:left; width:250px; }
-section #contenedor #djs #dj1 #imgdj1{background:url(../img/icicle.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px }
-section #contenedor #djs #dj1 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px; margin-top:25px; }
-section #contenedor #djs #dj2 { margin-bottom:10px ; float:left; margin-top:65px;width:250px; }
-section #contenedor #djs #dj2 #imgdj2{background:url(../img/xlarge.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat;margin-bottom:15px }
-section #contenedor #djs #dj2 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:95px; margin-top:25px;}
-section #contenedor #djs #dj3 { margin-bottom:95px;width:250px;  }
-section #contenedor #djs #dj3 #imgdj3{background:url(../img/dirty.jpg); width:85px; height:70px; float:left; background-size: 100% 100%; background-repeat:no-repeat; }
-section #contenedor #djs #dj3 h3{font-size:15px; font-style:normal; color:rgba(255,255,255,0.7) ; margin-left:10px; margin-top:25px; float:left;}
-
-
-
-footer #redes { width:140px; margin-left:20px; display: inline-block;}
-footer #redes #rd1{background:url(../img/twit.png); width:30px; height:30px; background-size:100% 100%; margin-right:10px;  display: inline-block;}
-footer #redes #rd2{background:url(../img/face.png); width:30px; height:30px; background-size:100% 100%;margin-right:10px; display: inline-block;}
-footer #redes #rd3{background:url(../img/insta.png); width:30px; height:30px; background-size:100% 100%;margin-right:20px; display: inline-block;}
-footer #copy {display: inline-block; width: 350px; position: absolute; left: 50%; margin-left: -175px; text-align: center;}
-footer #copy  p {font-size:10px; font-style:normal; color:rgba(255,255,255,0.7); margin-top:10px;; float:left; }
-footer #log{background:url(../img/logo.jpg); width:110px; height:30px; background-size: 100% 100%;  position: absolute; right: 20px; top: 20px;}
-
-}
