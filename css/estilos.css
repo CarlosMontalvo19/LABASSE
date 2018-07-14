@@ -141,16 +141,32 @@
 }
  header nav ul li {
      margin-top:70px;
+     /* background-color: #212529; */
+     position: relative;
+     width: 100%;
+     height: 31px;
+     display:  flex;
+     justify-content:  center;
+     align-items:  center;
+     align-items:  center;
+     text-align: center;
 }
- header nav ul a {
+ header nav ul li a {
+     width:  1oo%;
      background:url(../img/vineta_03.png);
-    background-repeat:no-repeat;
-    background-position:left;
-    text-decoration:none;
-    color:#43FF24;
-    font-size:14px;
+     background-repeat:no-repeat;
+     background-position:left;
+     text-decoration:none;
+     color:#43FF24;
+     font-size:14px;
+     font-weight:  bold;
      margin:5px;
      padding: 10px;
+     background-color: #212529;
+     position:  relative;
+     width: 100%;
+     justify-content:  center;
+     display:  flex;
 }
  header nav ul li a:hover, header nav ul li a:active {
     background: rgba(0,0,0,0.9);
