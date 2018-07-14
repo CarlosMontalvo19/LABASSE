@@ -121,7 +121,10 @@
     width:140px;
 }
  header nav #menu {
-     margin-left: 30px;
+     display:  flex;
+     justify-content: center;
+     align-items:  center;
+     flex-direction:  column;
 }
  header nav ul {
     /* margin-top:91px; */
