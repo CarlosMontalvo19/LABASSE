@@ -109,6 +109,10 @@
 }
  footer #margen_footer {
      padding: 20px;
+     display:  flex;
+     justify-content: space-between;
+     align-content:  center;
+     width:  100%;
 }
  .separador {
      clear:both ;
@@ -152,7 +156,7 @@
      text-align: center;
 }
  header nav ul li a {
-     width:  1oo%;
+     
      background:url(../img/vineta_03.png);
      background-repeat:no-repeat;
      background-position:left;
@@ -172,6 +176,37 @@
     background: rgba(0,0,0,0.9);
     border-radius:2px;
 }
+
+    header .redes {
+         width:140px;
+         margin-left:20px;
+         display: inline-block;
+    }
+     header .redes #rd1{
+        background:url(../img/twit.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+         margin-right:10px;
+         display: inline-block;
+    }
+    header .redes #rd2{
+        background:url(../img/face.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+        margin-right:10px;
+         display: inline-block;
+    }
+	header .redes #rd3{
+        background:url(../img/insta.png);
+         width:30px;
+         height:30px;
+         background-size:100% 100%;
+        margin-right:20px;
+         display: inline-block;
+    }
+
  section #ultimos{
     width:325px;
     float:left;
@@ -434,7 +469,7 @@
  footer #redes {
      width:140px;
      margin-left:20px;
-     display: inline-block;
+     display: none;
 }
  footer #redes #rd1{
     background:url(../img/twit.png);
@@ -461,12 +496,12 @@
      display: inline-block;
 }
  footer #copy {
-    display: inline-block;
-     width: 350px;
-     position: absolute;
-     left: 50%;
-     margin-left: -175px;
-     text-align: center;
+    display: flex;
+    width: 350px;
+    position: relative;
+    /* left: 50%; */
+    /* margin-left: -175px; */
+    /* text-align: center; */
 }
  footer #copy p {
     font-size:10px;
@@ -2817,6 +2852,8 @@
         background: rgba(0,0,0,0.9);
         border-radius:2px;
     }
+
+
      section #contenedor {
         width:1054px;
          margin-bottom:4px;
@@ -3082,12 +3119,12 @@
          margin-top:25px;
          float:left;
     }
-     footer #redes {
+     footer #redes, header .redes {
          width:140px;
          margin-left:20px;
          display: inline-block;
     }
-     footer #redes #rd1{
+     footer #redes #rd1, header .redes #rd1{
         background:url(../img/twit.png);
          width:30px;
          height:30px;
@@ -3095,7 +3132,7 @@
          margin-right:10px;
          display: inline-block;
     }
-     footer #redes #rd2{
+     footer #redes #rd2, header .redes #rd2{
         background:url(../img/face.png);
          width:30px;
          height:30px;
@@ -3103,7 +3140,7 @@
         margin-right:10px;
          display: inline-block;
     }
-     footer #redes #rd3{
+     footer #redes #rd3, header .redes #rd3{
         background:url(../img/insta.png);
          width:30px;
          height:30px;
