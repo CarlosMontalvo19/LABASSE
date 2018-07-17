@@ -1,16 +1,19 @@
  *{
-    margin:0 ;
-     padding :0;
+     margin:0 ;
+     padding:0 ;
+    font-family: 'Ubuntu', sans-serif;
+
 }
  body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+/*font-family: 'Titillium Web', sans-serif;*/
 }
  #fondohome {
      position: fixed;
      z-index:-3;
      width: 100%;
-     height:100vh; 
-    background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+     height:100vh;
+     background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
      background-size: cover;
 }
  #fondo1 {
@@ -38,217 +41,253 @@
 }
  @keyframes fondo1{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      99%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-moz-keyframes fondo1{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-o-keyframes fondo1{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-webkit-keyframes fondo1{
      1%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  header {
-     
      background: rgba(52,0,101,0.8);
-     
      vertical-align: top;
-      display:flex;
+     display:flex;
      justify-content:center !important;
      align-items:center !important;
      flex-direction:column !important;
      align-content:space-between !important;
-
 }
-
  section {
      width: 82%;
      display: inline-block;
+}
+ section .titulo{
+     font-size:25px;
+     font-weight: bold;
+     margin-top: 50px;
+     margin-bottom: 0px;
+    }
+
+ section .title-a{
+     font-size:18px;
+     font-weight: lighter ;
+     margin-top: 0;
+}
+ .portada{
+    background-image:url('../img/disco-vin.jpg');
+    background-size:100% 100vh; 
+    background-position: center;
+    width: 100%;
+    color: #e9ecef;
+    padding: 20px;
+}
+.portada .btn{
+    margin-bottom: 60px;
+
 }
  footer {
      width:100%;
      background: rgba(52,0,101,0.8);
      position: relative;
 }
+}
  footer #margen_footer {
      padding: 20px;
-     display:  flex;
+     display: flex;
      justify-content: space-between;
-     align-content:  center;
-     width:  100%;
+     align-content: center;
+     width: 100%;
 }
  .separador {
      clear:both ;
 }
  header .logo {
-
-width: 100%;
-
-position: relative;
+     width: 100%;
+     position: relative;
 }
-
  header .menu {
      display: flex;
      justify-content: center;
-     align-items:  center;
-     flex-direction:  column;
+     align-items: center;
+     flex-direction: column;
      align-content: space-around;
 }
-
  header nav {
-    width: 100%;
-    position: relative;
+     width: 100%;
+     position: relative;
+     display: flex;
 }
 /* header nav #menu {
-     display:  flex;
+     display: flex;
      justify-content: center;
-     align-items:  center;
-     flex-direction:  column;
+     align-items: center;
+     flex-direction: column;
      align-content: space-around;
-}*/
+}
+ */
  header nav ul {
-
-    list-style:none;
-    display:  flex;
-    justify-content:  center;
-    align-content:  space-around;
-    flex-direction:  column;
-    position: relative;
-    width: 100%;
+     list-style:none;
+     display: flex;
+     justify-content: center;
+     align-content: space-around;
+     flex-direction: column;
+     position: relative;
+     width: 100%;
 }
  header nav ul li {
      margin-top:70px;
-     /* background-color: #212529; */
+    /* background-color: #212529;
+     */
      position: relative;
      width: 100%;
      height: 31px;
-     display:  flex;
-     justify-content:  center;
-     align-items:  center;
+     display:flex;
+     justify-content: center;
+     align-items: center;
      align-content: space-around;
      text-align: center;
 }
  header nav ul li a {
-     
- 
      text-decoration:none;
-     color:#43FF24;
+     font-family: 'UbuntuS 600i', sans-serif;
+     color: #dee2e6;
      font-size:14px;
-     font-weight:  bold;
+     font-weight: bold;
      margin:5px;
      padding: 10px;
      padding-left: 15px;
-     background-color: #212529;
+    /* background-color: #212529;
+     */
      position:relative;
      width: 100%;
      justify-content:center;
-     display:  flex;
+     display: block;
 }
  header nav ul li a:hover, header nav ul li a:active {
-    background: rgba(0,0,0,0.9);
-    border-radius:2px;
+     text-decoration: none;
+     background: rgba(0,0,0,0.9);
+     border-radius: 50px;
+     color: #fff;
+     transition: fade;
+    /* width: 150px;
+     */
 }
-
-    header .redes {
-         /* width:140px; */
-         /* margin-left:20px; */
-         width: 100%;
-         display: flex;
-         position:  relative;
-         justify-content: space-evenly;
-         align-content: space-around;
-    }
-     header .redes #rd1{
-        background:url(../img/twit.png);
-         width:30px;
-         height:30px;
-         background-size:100% 100%;
-        
-         display: inline-block;
-    }
-    header .redes #rd2{
-        background:url(../img/face.png);
-         width:30px;
-         height:30px;
-         background-size:100% 100%;
-       
-         display: inline-block;
-    }
-	header .redes #rd3{
-        background:url(../img/insta.png);
-         width:30px;
-         height:30px;
-         background-size:100% 100%;
-       
-         display: inline-block;
-    }
-
- section #ultimos{
-    width:325px;
-    float:left;
-    background: rgba(52,0,102,0.8);
-    margin-top:220px;
-    box-shadow:0px 0px 15px rgba(0,0,0,1);
-    transition: all 0.5s;
-    position: relative;
+ header nav .redes {
+    /* width:140px;
+     */
+    /* margin-left:20px;
+     */
+     width: 100%;
+     display: flex;
+     position: relative;
+     justify-content: space-evenly;
+     align-content: space-around;
 }
- section #ultimos:hover {
-    transform: scale(1.25,1.25);
+ header .redes #rd1{
+     background:url(../img/twit.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+     display: inline-block;
 }
- section #ultimos h2 {
-    font-size:15px;
-     color:rgba(255,170,0,1);
-    background:url(../img/vineta1.png);
-    background-repeat:no-repeat;
-    background-position:left;
-    padding-left:15px;
+ header .redes #rd2{
+     background:url(../img/face.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+     display: inline-block;
+}
+ header .redes #rd3{
+     background:url(../img/insta.png);
+     width:30px;
+     height:30px;
+     background-size:100% 100%;
+     display: inline-block;
+}
+ section .cuadro{
+     background: #f8f9fad6;
+     box-shadow:0px 0px 15px rgba(0,0,0,1);
+     transition: all -8.5s;
+}
+ section .cuadro h2 {
+     font-size:15px;
+     font-weight: bold;
+     color: rgba(52, 0, 102, 1);
+     background:url(../img/vineta1.png);
+     background-repeat:no-repeat;
+     background-position:left;
+     padding-left:15px;
      margin-top:18px;
      margin-bottom:20px;
      margin-left:11px;
+}
+ section .cuadro h3 {
+     font-size:15px;
+     font-style:normal;
+     color: #343a40;
+     margin-left:95px;
+}
+ section .cuadro p {
+     font-size:15px;
+     font-style:normal;
+     color: #343a40;
+     margin-left:95px;
+}
+ section #ultimos{
+     width:325px;
+     float:left;
+     margin-top:150px;
+     position: relative;
+}
+ section .anime:hover {
+     transform: scale(1.045,1.045);
 }
  section #ultimos #ult1{
      width:200px;
@@ -266,14 +305,12 @@ position: relative;
  section #ultimos #ult1 h3 {
      font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
 }
  section #ultimos #ult1 p{
      font-size:14px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
-    margin-left:95px;
+     margin-left:95px;
 }
  section #ultimos #ult1 audio {
      margin-bottom:10px;
@@ -289,19 +326,17 @@ position: relative;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px
+     margin-bottom:15px 
 }
  section #ultimos #ult2 h3 {
      font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
 }
  section #ultimos #ult2 p{
      font-size:14px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
-    margin-left:95px;
+     margin-left:95px;
 }
  section #ultimos #ult2 audio {
      margin-bottom:10px;
@@ -318,36 +353,31 @@ position: relative;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px
+     margin-bottom:15px 
 }
  section #ultimos #ult3 h3 {
      font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
 }
  section #ultimos #ult3 p{
      font-size:14px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
-    margin-left:95px;
+     margin-left:95px;
 }
  section #ultimos #ult3 audio {
      margin-bottom:10px;
 }
  section #maratones{
-    width:325px;
+     width:325px;
      float:left;
-     background: rgba(0,0,0,0.8);
-     margin-top:364px;
+     background: #f8f9fad6;
+     margin-top:200px;
      margin-left:30px;
      padding-left:11px;
      box-shadow:0px 0px 15px rgba(0,0,0,1);
      transition: all 0.5s;
      position: relative;
-}
- section #maratones:hover {
-    transform: scale(1.25,1.25);
 }
  section #maratones #mara1 {
      margin-bottom:55px;
@@ -359,18 +389,7 @@ position: relative;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px
-}
- section #maratones h2{
-    font-size:15px;
-     color:rgba(255,170,0,1);
-    background:url(../img/vineta1.png);
-    background-repeat:no-repeat;
-    background-position:left;
-    padding-left:15px;
-     margin-top:18px;
-     margin-bottom:20px;
-     margin-left:11px;
+     margin-bottom:15px 
 }
  section #maratones #mara2 #imgmara1{
      background:url(../img/fabric.jpg);
@@ -379,29 +398,27 @@ position: relative;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px
+     margin-bottom:15px 
 }
  section #maratones h3 {
      font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
 }
  section #maratones p {
      font-size:14px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
-    margin-left:95px;
+     margin-left:95px;
      padding-right:15px;
 }
  section #maratones audio {
      margin-bottom:40px;
 }
  section #djs {
-    width:315px;
+     width:315px;
      float: right;
-     background: rgba(0,0,0,0.8);
-     margin-top:352px;
+     background: #f8f9fad6;
+     margin-top:250px;
      margin-left:30px;
      padding-left:11px;
      padding-bottom:25px;
@@ -409,38 +426,23 @@ position: relative;
      transition: all 0.5s;
      position: relative;
 }
- section #djs:hover{
-    transform: scale(1.25,1.25);
-}
- section #djs h2{
-    font-size:15px;
-     color:rgba(255,170,0,1);
-    background:url(../img/vineta1.png);
-    background-repeat:no-repeat;
-    background-position:left;
-    padding-left:15px;
-     margin-top:18px;
-     margin-bottom:20px;
-     margin-left:11px;
-}
  section #djs #dj1 {
      margin-bottom:-66px ;
      float:left;
      width:250px;
 }
  section #djs #dj1 #imgdj1{
-    background:url(../img/icicle.jpg);
+     background:url(../img/icicle.jpg);
      width:85px;
      height:70px;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px 
+     margin-bottom:15px 
 }
  section #djs #dj1 h3{
-    font-size:15px;
+     font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
      margin-top:25px;
 }
@@ -448,30 +450,29 @@ position: relative;
      margin-bottom:10px ;
      float:left;
      margin-top:65px;
-    width:250px;
+     width:250px;
 }
  section #djs #dj2 #imgdj2{
-    background:url(../img/xlarge.jpg);
+     background:url(../img/xlarge.jpg);
      width:85px;
      height:70px;
      float:left;
      background-size: 100% 100%;
      background-repeat:no-repeat;
-    margin-bottom:15px 
+     margin-bottom:15px 
 }
  section #djs #dj2 h3{
-    font-size:15px;
+     font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:95px;
      margin-top:25px;
 }
  section #djs #dj3 {
      margin-bottom:95px;
-    width:250px;
+     width:250px;
 }
  section #djs #dj3 #imgdj3{
-    background: url(../img/phonics.jpg);
+     background: url(../img/phonics.jpg);
      width:85px;
      height:70px;
      float:left;
@@ -479,9 +480,8 @@ position: relative;
      background-repeat:no-repeat;
 }
  section #djs #dj3 h3{
-    font-size:15px;
+     font-size:15px;
      font-style:normal;
-     color:rgba(255,255,255,0.7) ;
      margin-left:10px;
      margin-top:25px;
      float:left;
@@ -492,7 +492,7 @@ position: relative;
      display: none;
 }
  footer #redes #rd1{
-    background:url(../img/twit.png);
+     background:url(../img/twit.png);
      width:30px;
      height:30px;
      background-size:100% 100%;
@@ -500,39 +500,42 @@ position: relative;
      display: inline-block;
 }
  footer #redes #rd2{
-    background:url(../img/face.png);
+     background:url(../img/face.png);
      width:30px;
      height:30px;
      background-size:100% 100%;
-    margin-right:10px;
+     margin-right:10px;
      display: inline-block;
 }
  footer #redes #rd3{
-    background:url(../img/insta.png);
+     background:url(../img/insta.png);
      width:30px;
      height:30px;
      background-size:100% 100%;
-    margin-right:20px;
+     margin-right:20px;
      display: inline-block;
 }
  footer #copy {
-    display: flex;
-    width: 350px;
-    position: relative;
-    /* left: 50%; */
-    /* margin-left: -175px; */
-    /* text-align: center; */
+     display: flex;
+     width: 350px;
+     position: relative;
+    /* left: 50%;
+     */
+    /* margin-left: -175px;
+     */
+    /* text-align: center;
+     */
 }
  footer #copy p {
-    font-size:10px;
+     font-size:10px;
      font-style:normal;
      color:rgba(255,255,255,0.7);
      margin-top:10px;
-    ;
+     ;
      float:left;
 }
  footer #log{
-    background:url(../img/logo.jpg);
+     background:url(../img/logo.jpg);
      width:110px;
      height:30px;
      background-size: 100% 100%;
@@ -546,7 +549,7 @@ position: relative;
      z-index:-1;
      width: 100%;
      height:923px ;
-    background: url(../img/disco-vin.jpg) ;
+     background: url(../img/disco-vin.jpg) ;
      background-size: 100% 100%;
 }
  #fondo2{
@@ -574,58 +577,58 @@ position: relative;
 }
  @keyframes fondo2{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-moz-keyframes fondo2{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-o-keyframes fondo2{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-webkit-keyframes fondo2{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  section #contenedor #evento1,section #contenedor #evento2,section #contenedor #evento1,section #contenedor #evento3,section #contenedor #evento1,section #contenedor #evento4{
@@ -658,7 +661,7 @@ position: relative;
      margin-left:20px;
 }
  section #contenedor #evento1 #artiseve1 h2,section #contenedor #evento2 #artiseve2 h2,section #contenedor #evento3 #artiseve3 h2,section #contenedor #evento4 #artiseve4 h2 {
-    font-size:15px;
+     font-size:15px;
      color:rgba(255,255,255,0.7);
      margin-top:15px;
 }
@@ -722,7 +725,7 @@ position: relative;
      z-index:-1;
      width: 100%;
      height:923px ;
-    background: url(../img/disco-musica.jpg) ;
+     background: url(../img/disco-musica.jpg) ;
      background-size:100%;
 }
  #fondo3{
@@ -750,58 +753,58 @@ position: relative;
 }
  @keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-webkit-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-moz-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-o-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      25%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  section #contenedor #reproducir {
@@ -820,12 +823,12 @@ position: relative;
      box-shadow:0px 0px 15px rgba(0,0,0,1);
 }
  section #contenedor #reproducir h3 {
-    font-size:20px;
+     font-size:20px;
      color: rgba(255,255,255,1);
      margin-top:25px;
 }
  section #contenedor #reproducir p {
-    font-size:15px;
+     font-size:15px;
      color: rgba(255,255,255,0.8);
      margin-top:20px;
      margin-bottom:20px;
@@ -861,13 +864,13 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus1 #cancion1 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
      margin-left:28px;
 }
  section #contenedor #mus1 #cancion1 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
      margin-left:36px;
@@ -897,13 +900,13 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus1 #cancion2 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
      margin-left:64px;
 }
  section #contenedor #mus1 #cancion2 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
      margin-left:33px;
@@ -939,12 +942,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus2 #cancion3 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus2 #cancion3 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -973,12 +976,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus2 #cancion4 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus2 #cancion4 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -1013,12 +1016,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus3 #cancion5 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus3 #cancion5 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -1047,12 +1050,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus3 #cancion6 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus3 #cancion6 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -1087,12 +1090,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus4 #cancion7 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus4 #cancion7 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -1121,12 +1124,12 @@ position: relative;
      margin-top:20px;
 }
  section #contenedor #mus4 #cancion8 h3{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,1);
      margin-top:80px;
 }
  section #contenedor #mus4 #cancion8 p{
-    font-size:12px;
+     font-size:12px;
      color: rgba(255,255,255,0.8);
      margin-top:5px;
 }
@@ -1136,7 +1139,7 @@ position: relative;
      z-index:-1;
      width: 100%;
      height:923px ;
-    background:url(../img/disco.jpg) ;
+     background:url(../img/disco.jpg) ;
      background-size:100%;
 }
  #fondo4{
@@ -1161,58 +1164,58 @@ position: relative;
 }
  @keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-webkit-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-moz-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-o-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  section #contenedor #contbole {
@@ -1261,7 +1264,7 @@ position: relative;
      list-style: none;
 }
  section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
-    font-size:15px;
+     font-size:15px;
      color:rgba(255,255,255,0.7);
      margin-top:10px;
      font-weight:bold ;
@@ -1312,7 +1315,7 @@ position: relative;
      z-index:-1;
      width: 100%;
      height:923px ;
-    background: url(../img/Discos.jpg) ;
+     background: url(../img/Discos.jpg) ;
      background-size:100%;
 }
  #fondo5{
@@ -1337,63 +1340,63 @@ position: relative;
 }
  @keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-webkit-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-moz-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  @-o-keyframes fondo3{
      0%{
-        opacity: 0;
+         opacity: 0;
     }
      35%{
-        opacity: 1;
+         opacity: 1;
     }
      75%{
-        opacity: 1;
+         opacity: 1;
     }
      100%{
-        opacity: 0;
+         opacity: 0;
     }
 }
  section #contenedor #productos1,section #contenedor #productos2,section #contenedor #productos3,section #contenedor #productos4 {
-    float: left ;
-    width:210px;
+     float: left ;
+     width:210px;
      margin-top: 160px;
      margin-right:30px;
 }
@@ -1409,7 +1412,7 @@ position: relative;
      text-align:center;
 }
  section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {
-    transform: scale(1.25,1.25);
+     transform: scale(1.25,1.25);
 }
  section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3 {
      font-size:12px;
@@ -1483,7 +1486,7 @@ position: relative;
      #fondohome {
          width: 100%;
          height: 1425px;
-        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
          background-size:cover ;
     }
      #fondo1 {
@@ -1492,14 +1495,14 @@ position: relative;
          background-size: cover;
     }
      #conteprin {
-        width: 463px;
+         width: 463px;
     }
      header {
-        width: 462px;
+         width: 462px;
          height: 150px ;
     }
      header #logo {
-        width:213px;
+         width:213px;
          height:48px;
          background:url(../img/logo.jpg);
          background-size: 100%;
@@ -1518,7 +1521,7 @@ position: relative;
          width: 100%;
     }
      header nav #menu ul {
-        margin-right: 0;
+         margin-right: 0;
          margin-bottom: 0;
          margin-top: 110px;
     }
@@ -1527,33 +1530,33 @@ position: relative;
          margin-top: 0;
     }
      section #contenedor {
-        width:450px;
+         width:450px;
          margin-bottom:4px;
          margin-left:0px;
          padding:20px 0 0 10px;
     }
      section #contenedor #ultimos{
-        width:340px;
+         width:340px;
          float:left;
          margin-top:20px;
          margin-left: 25px;
          padding-left: 11px;
     }
      section #contenedor #ultimos:hover {
-        transform: scale(1.15,1.15);
+         transform: scale(1.15,1.15);
     }
      section #contenedor #maratones{
-        width:340px;
+         width:340px;
          float:left;
          margin-top:20px;
          margin-left:25px;
          padding-left:11px;
     }
      section #contenedor #maratones:hover {
-        transform: scale(1.15,1.15);
+         transform: scale(1.15,1.15);
     }
      section #contenedor #djs {
-        width:340px;
+         width:340px;
          float: left;
          margin-top:20px;
          margin-left:25px;
@@ -1563,7 +1566,7 @@ position: relative;
          padding-bottom: 35px;
     }
      section #contenedor #djs:hover{
-        transform: scale(1.15,1.15);
+         transform: scale(1.15,1.15);
     }
      footer #redes {
          width:110px;
@@ -1585,7 +1588,7 @@ position: relative;
          margin-top: -13px;
     }
      footer #log{
-        background:url(../img/logo.jpg);
+         background:url(../img/logo.jpg);
          width:110px;
          height:30px;
          background-size: 100% 100%;
@@ -1597,7 +1600,7 @@ position: relative;
      #fondoeve {
          width: 100%;
          height:2255px ;
-        background: url(../img/disco-vin.jpg) ;
+         background: url(../img/disco-vin.jpg) ;
          background-size: cover;
     }
      #fondo2{
@@ -1659,7 +1662,7 @@ position: relative;
          padding-top: 15px;
     }
      section #contenedor #evento1 #dateve1 ul ,section #contenedor #evento2 #dateve2 ul ,section #contenedor #evento3 #dateve3 ul ,section #contenedor #evento4 #dateve4 ul {
-        margin:auto;
+         margin:auto;
          width: 200px;
     }
      section #contenedor #evento1 #dateve1 ul li,section #contenedor #evento2 #dateve2 ul li,section #contenedor #evento3 #dateve3 ul li,section #contenedor #evento4 #dateve4 ul li {
@@ -1674,7 +1677,7 @@ position: relative;
      #fondomus {
          width: 100%;
          height:1230px ;
-        background: url(../img/disco-musica.jpg) ;
+         background: url(../img/disco-musica.jpg) ;
          background-size:cover;
     }
      #fondo3{
@@ -1701,11 +1704,11 @@ position: relative;
          margin-bottom: 15px;
     }
      section #contenedor #reproducir h3 {
-        font-size:15px;
+         font-size:15px;
          margin-top:20px;
     }
      section #contenedor #reproducir p {
-        font-size:15px;
+         font-size:15px;
          color: rgba(255,255,255,0.8);
          margin-top:20px;
          margin-bottom:20px;
@@ -1738,7 +1741,7 @@ position: relative;
      #fondobol {
          width: 100%;
          height:1315px ;
-        background:url(../img/disco.png) ;
+         background:url(../img/disco.png) ;
          background-size:cover;
     }
      #fondo4{
@@ -1778,7 +1781,7 @@ position: relative;
          float:right;
     }
      section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
-        font-size:20px;
+         font-size:20px;
          margin-top:7px;
          font-weight:bold ;
     }
@@ -1786,7 +1789,7 @@ position: relative;
      #fondoprod {
          width: 100%;
          height:1144px ;
-        background: url(../img/Discos.png) ;
+         background: url(../img/Discos.png) ;
          background-size:cover;
          background-repeat: no-repeat;
     }
@@ -1816,12 +1819,12 @@ position: relative;
  @media only screen and (min-width: 481px) and (max-width: 768px) {
     /*home*/
      body {
-        font-family:Arial, Helvetica, sans-serif;
+         font-family:Arial, Helvetica, sans-serif;
     }
      #fondohome {
          width: 100%;
          height:823px ;
-        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
          background-size: cover;
     }
      #fondo1{
@@ -1850,7 +1853,7 @@ position: relative;
          clear:both ;
     }
      header #logo {
-        width:123px;
+         width:123px;
          height:48px;
          background:url(../img/logo.jpg);
          background-repeat: no-repeat;
@@ -1859,23 +1862,23 @@ position: relative;
          margin-left:10px;
     }
      header nav {
-        width:140px;
+         width:140px;
     }
      header nav ul {
-        margin-top:91px;
+         margin-top:91px;
          margin-right:40px;
-        list-style:none;
+         list-style:none;
          margin-bottom: 150px;
          margin-left: -18px;
     }
      section #contenedor {
-        width:584px;
+         width:584px;
          margin-bottom:4px;
          margin-left:-10px;
          padding:10px 10px 0 20px;
     }
      section #contenedor #ultimos{
-        width:280px;
+         width:280px;
          float:left;
          background: rgba(0,0,0,0.8);
          margin-top:220px;
@@ -1884,7 +1887,7 @@ position: relative;
          position: relative;
     }
      section #contenedor #ultimos:hover {
-        transform: scale(1.25,1.25);
+         transform: scale(1.25,1.25);
     }
      section #contenedor #ultimos #ult1 audio {
          margin-bottom:10px;
@@ -1899,7 +1902,7 @@ position: relative;
          width: 250px;
     }
      section #contenedor #maratones{
-        width:260px;
+         width:260px;
          float:left;
          background: rgba(0,0,0,0.8);
          margin-top:345px;
@@ -1920,7 +1923,7 @@ position: relative;
      #fondoeve {
          width: 100%;
          height:823px ;
-        background: url(../img/disco-vin.jpg) ;
+         background: url(../img/disco-vin.jpg) ;
          background-size: cover;
     }
      #fondo2{
@@ -1938,7 +1941,7 @@ position: relative;
          position: relative;
     }
      section #contenedor #evento3{
-        margin-left: 0px;
+         margin-left: 0px;
     }
      section #contenedor #evento1 #imgeve1 {
          width:100px;
@@ -2013,7 +2016,7 @@ position: relative;
      #fondomus {
          width: 100%;
          height:823px ;
-        background-repeat: no-repeat;
+         background-repeat: no-repeat;
          background: url(../img/disco-musica.jpg) ;
          background-size:cover;
     }
@@ -2037,12 +2040,12 @@ position: relative;
          margin-right:30px;
     }
      section #contenedor #reproducir h3 {
-        font-size:20px;
+         font-size:20px;
          color: rgba(255,255,255,1);
          margin-top:25px;
     }
      section #contenedor #reproducir p {
-        font-size:15px;
+         font-size:15px;
          color: rgba(255,255,255,0.8);
          margin-top:20px;
          margin-bottom:20px;
@@ -2082,13 +2085,13 @@ position: relative;
          margin-top:10px;
     }
      section #contenedor #mus1 #cancion1 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:70px;
          margin-left:18px;
     }
      section #contenedor #mus1 #cancion1 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
          margin-left:26px;
@@ -2118,13 +2121,13 @@ position: relative;
          margin-top:10px;
     }
      section #contenedor #mus1 #cancion2 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:70px;
          margin-left:64px;
     }
      section #contenedor #mus1 #cancion2 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
          margin-left:28px;
@@ -2160,12 +2163,12 @@ position: relative;
          margin-top:20px;
     }
      section #contenedor #mus2 #cancion3 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:80px;
     }
      section #contenedor #mus2 #cancion3 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
     }
@@ -2194,12 +2197,12 @@ position: relative;
          margin-top:10px;
     }
      section #contenedor #mus2 #cancion4 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:70px;
     }
      section #contenedor #mus2 #cancion4 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
     }
@@ -2234,12 +2237,12 @@ position: relative;
          margin-top:20px;
     }
      section #contenedor #mus3 #cancion5 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:80px;
     }
      section #contenedor #mus3 #cancion5 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
     }
@@ -2268,12 +2271,12 @@ position: relative;
          margin-top:10px;
     }
      section #contenedor #mus3 #cancion6 h3{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,1);
          margin-top:70px;
     }
      section #contenedor #mus3 #cancion6 p{
-        font-size:12px;
+         font-size:12px;
          color: rgba(255,255,255,0.8);
          margin-top:5px;
     }
@@ -2286,7 +2289,7 @@ position: relative;
          z-index:-1;
          width: 100%;
          height:823px ;
-        background:url(../img/disco.png) ;
+         background:url(../img/disco.png) ;
          background-size:cover;
     }
      #fondo4{
@@ -2330,7 +2333,7 @@ position: relative;
          float: right;
     }
      section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,255,255,0.7);
          margin-top:10px;
          font-weight:bold ;
@@ -2384,7 +2387,7 @@ position: relative;
      #fondoprod {
          width: 100%;
          height:823px ;
-        background: url(../img/Discos.png) ;
+         background: url(../img/Discos.png) ;
          background-size:cover;
     }
      #fondo5{
@@ -2392,8 +2395,8 @@ position: relative;
          height:823px;
     }
      section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3{
-        float: left ;
-        width:100px;
+         float: left ;
+         width:100px;
          margin-top: 160px;
          margin-right:80px;
     }
@@ -2412,7 +2415,7 @@ position: relative;
          text-align:center;
     }
      section #contenedor #productos1 #produ1:hover,section #contenedor #productos1 #produ2:hover,section #contenedor #productos2 #produ3:hover,section #contenedor #productos2 #produ4:hover,section #contenedor #productos3 #produ5:hover,section #contenedor #productos3 #produ6:hover,section #contenedor #productos4 #produ7:hover,section #contenedor #productos4 #produ8:hover {
-        transform: scale(1.25,1.25);
+         transform: scale(1.25,1.25);
     }
      section #contenedor #productos1 #produ1 h3,section #contenedor #productos1 #produ2 h3,section #contenedor #productos2 #produ3 h3,section #contenedor #productos2 #produ4 h3, section #contenedor #productos3 #produ5 h3,section #contenedor #productos3 #produ6 h3,section #contenedor #productos4 #produ7 h3,section #contenedor #productos4 #produ8 h3 {
          font-size:12px;
@@ -2480,7 +2483,7 @@ position: relative;
          width: 79%;
     }
      header #logo {
-        width:129px;
+         width:129px;
          height:55px;
          background:url(../img/logo.jpg);
          background-repeat: no-repeat;
@@ -2489,12 +2492,12 @@ position: relative;
          margin-left:20px;
     }
      section #contenedor {
-        width:700px;
+         width:700px;
          padding: 5px;
          margin-left: 10px;
     }
      section #contenedor #ultimos{
-        width:200px;
+         width:200px;
          float:left;
          margin-top:220px;
          transition: all 0.5s;
@@ -2505,7 +2508,7 @@ position: relative;
          width: 180px;
     }
      section #contenedor #maratones{
-        width:200px;
+         width:200px;
          float:left;
          background: rgba(0,0,0,0.8);
          margin-top:295px;
@@ -2519,7 +2522,7 @@ position: relative;
          width: 180px;
     }
      section #contenedor #djs {
-        width:220px;
+         width:220px;
          float: right;
          margin-top:352px;
          margin-left:15px;
@@ -2527,23 +2530,23 @@ position: relative;
          padding-bottom:25px;
     }
      section #contenedor #djs h2{
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,170,0,1);
-        background:url(../img/vineta1.png);
-        background-repeat:no-repeat;
-        background-position:left;
-        padding-left:15px;
+         background:url(../img/vineta1.png);
+         background-repeat:no-repeat;
+         background-position:left;
+         padding-left:15px;
          margin-top:18px;
          margin-bottom:20px;
          margin-left:11px;
     }
      section #contenedor #djs #dj1 h3,section #contenedor #djs #dj2 h3,section #contenedor #djs #dj3 h3{
-        font-size:15px;
+         font-size:15px;
          margin-top:25px;
          width: 100px;
     }
      footer #redes #rd1{
-        background:url(../img/twit.png);
+         background:url(../img/twit.png);
          width:20px;
          height:20px;
          background-size:100% 100%;
@@ -2551,26 +2554,26 @@ position: relative;
          display: inline-block;
     }
      footer #redes #rd2{
-        background:url(../img/face.png);
+         background:url(../img/face.png);
          width:20px;
          height:20px;
          background-size:100% 100%;
-        margin-right:10px;
+         margin-right:10px;
          display: inline-block;
     }
      footer #redes #rd3{
-        background:url(../img/insta.png);
+         background:url(../img/insta.png);
          width:20px;
          height:20px;
          background-size:100% 100%;
-        margin-right:20px;
+         margin-right:20px;
          display: inline-block;
     }
     /*-------eventos------*/
      #fondoeve {
          width: 100%;
          height:920px ;
-        background: url(../img/disco-vin.jpg) ;
+         background: url(../img/disco-vin.jpg) ;
          background-size: 100% 100%;
     }
      #fondo2{
@@ -2641,7 +2644,7 @@ position: relative;
      #fondomus {
          width: 100%;
          height:920px ;
-        background: url(../img/disco-musica.jpg) ;
+         background: url(../img/disco-musica.jpg) ;
          background-size:100%;
     }
      #fondo3{
@@ -2685,7 +2688,7 @@ position: relative;
      #fondobol {
          width: 100%;
          height:920px ;
-        background:url(../img/disco.png) ;
+         background:url(../img/disco.png) ;
          background-size:cover;
     }
      #fondo4{
@@ -2704,17 +2707,17 @@ position: relative;
          margin-bottom: 35px;
     }
      section #contenedor #boletas1 #dirbo1 ul li, section #contenedor #boletas2 #dirbo2 ul li,section #contenedor #boletas3 #dirbo3 ul li ,section #contenedor #boletas4 #dirbo4 ul li,section #contenedor #boletas5 #dirbo5 ul li,section #contenedor #boletas6 #dirbo6 ul li {
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,255,255,0.7);
          margin-top:10px;
          font-weight:bold ;
-        margin-left: 10px;
+         margin-left: 10px;
     }
     /*productos*/
      #fondoprod {
          width: 100%;
          height:920px ;
-        background: url(../img/Discos.png) ;
+         background: url(../img/Discos.png) ;
          background-size:cover;
     }
      #fondo5{
@@ -2722,8 +2725,8 @@ position: relative;
          height:920px;
     }
      section #contenedor #productos1 ,section #contenedor #productos2 ,section #contenedor #productos3, section #contenedor .oculto2 #productos4 {
-        float: left ;
-        width:150px;
+         float: left ;
+         width:150px;
          margin-top: 160px;
          margin-right:25px;
     }
@@ -2803,9 +2806,9 @@ position: relative;
 }
  @media only screen and (min-width: 961px) and (max-width: 1024px) {
      #fondohome {
-        width: 100%;
+         width: 100%;
          height:900px ;
-        background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
+         background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
          background-size: cover;
     }
      #fondo1{
@@ -2836,7 +2839,7 @@ position: relative;
          clear:both ;
     }
      header #logo {
-        width:213px;
+         width:213px;
          height:48px;
          background:url(../img/logo.jpg);
          background-size: 100%;
@@ -2844,15 +2847,15 @@ position: relative;
          margin-left:13px;
     }
      header nav {
-        width:140px;
+         width:140px;
     }
      header nav #menu {
          margin-left: 30px;
     }
      header nav ul {
-        margin-top:91px;
+         margin-top:91px;
          margin-right:40px;
-        list-style:none;
+         list-style:none;
          margin-bottom: 100px;
     }
      header nav ul li {
@@ -2860,28 +2863,26 @@ position: relative;
     }
      header nav ul a {
          background:url(../img/vineta_03.png);
-        background-repeat:no-repeat;
-        background-position:left;
-        text-decoration:none;
-        color:#43FF24;
-        font-size:14px;
+         background-repeat:no-repeat;
+         background-position:left;
+         text-decoration:none;
+         color:#43FF24;
+         font-size:14px;
          padding-left:15px;
          padding: 10px;
     }
      header nav ul li a:hover, header nav ul li a:active {
-        background: rgba(0,0,0,0.9);
-        border-radius:2px;
+         background: rgba(0,0,0,0.9);
+         border-radius:2px;
     }
-
-
      section #contenedor {
-        width:1054px;
+         width:1054px;
          margin-bottom:4px;
          margin-left:60px;
          padding:30px 30px 0 30px;
     }
      section #contenedor #ultimos{
-        width:325px;
+         width:325px;
          float:left;
          background: rgba(0,0,0,0.8);
          margin-top:220px;
@@ -2890,15 +2891,15 @@ position: relative;
          position: relative;
     }
      section #contenedor #ultimos:hover {
-        transform: scale(1.25,1.25);
+         transform: scale(1.25,1.25);
     }
      section #contenedor #ultimos h2 {
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,170,0,1);
-        background:url(../img/vineta1.png);
-        background-repeat:no-repeat;
-        background-position:left;
-        padding-left:15px;
+         background:url(../img/vineta1.png);
+         background-repeat:no-repeat;
+         background-position:left;
+         padding-left:15px;
          margin-top:18px;
          margin-bottom:20px;
          margin-left:11px;
@@ -2926,7 +2927,7 @@ position: relative;
          font-size:14px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
-        margin-left:95px;
+         margin-left:95px;
     }
      section #contenedor #ultimos #ult1 audio {
          margin-bottom:10px;
@@ -2942,7 +2943,7 @@ position: relative;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px
+         margin-bottom:15px 
     }
      section #contenedor #ultimos #ult2 h3 {
          font-size:15px;
@@ -2954,7 +2955,7 @@ position: relative;
          font-size:14px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
-        margin-left:95px;
+         margin-left:95px;
     }
      section #contenedor #ultimos #ult2 audio {
          margin-bottom:10px;
@@ -2971,7 +2972,7 @@ position: relative;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px
+         margin-bottom:15px 
     }
      section #contenedor #ultimos #ult3 h3 {
          font-size:15px;
@@ -2983,13 +2984,13 @@ position: relative;
          font-size:14px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
-        margin-left:95px;
+         margin-left:95px;
     }
      section #contenedor #ultimos #ult3 audio {
          margin-bottom:10px;
     }
      section #contenedor #maratones{
-        width:325px;
+         width:325px;
          float:left;
          background: rgba(0,0,0,0.8);
          margin-top:364px;
@@ -3000,7 +3001,7 @@ position: relative;
          position: relative;
     }
      section #contenedor #maratones:hover {
-        transform: scale(1.25,1.25);
+         transform: scale(1.25,1.25);
     }
      section #contenedor #maratones #mara1 {
          margin-bottom:55px;
@@ -3012,15 +3013,15 @@ position: relative;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px
+         margin-bottom:15px 
     }
      section #contenedor #maratones h2{
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,170,0,1);
-        background:url(../img/vineta1.png);
-        background-repeat:no-repeat;
-        background-position:left;
-        padding-left:15px;
+         background:url(../img/vineta1.png);
+         background-repeat:no-repeat;
+         background-position:left;
+         padding-left:15px;
          margin-top:18px;
          margin-bottom:20px;
          margin-left:11px;
@@ -3032,7 +3033,7 @@ position: relative;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px
+         margin-bottom:15px 
     }
      section #contenedor #maratones h3 {
          font-size:15px;
@@ -3044,14 +3045,14 @@ position: relative;
          font-size:14px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
-        margin-left:95px;
+         margin-left:95px;
          padding-right:15px;
     }
      section #contenedor #maratones audio {
          margin-bottom:40px;
     }
      section #contenedor #djs {
-        width:315px;
+         width:315px;
          float: right;
          background: rgba(0,0,0,0.8);
          margin-top:352px;
@@ -3063,15 +3064,15 @@ position: relative;
          position: relative;
     }
      section #contenedor #djs:hover{
-        transform: scale(1.25,1.25);
+         transform: scale(1.25,1.25);
     }
      section #contenedor #djs h2{
-        font-size:15px;
+         font-size:15px;
          color:rgba(255,170,0,1);
-        background:url(../img/vineta1.png);
-        background-repeat:no-repeat;
-        background-position:left;
-        padding-left:15px;
+         background:url(../img/vineta1.png);
+         background-repeat:no-repeat;
+         background-position:left;
+         padding-left:15px;
          margin-top:18px;
          margin-bottom:20px;
          margin-left:11px;
@@ -3082,16 +3083,16 @@ position: relative;
          width:250px;
     }
      section #contenedor #djs #dj1 #imgdj1{
-        background:url(../img/icicle.jpg);
+         background:url(../img/icicle.jpg);
          width:85px;
          height:70px;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px 
+         margin-bottom:15px 
     }
      section #contenedor #djs #dj1 h3{
-        font-size:15px;
+         font-size:15px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
          margin-left:95px;
@@ -3101,19 +3102,19 @@ position: relative;
          margin-bottom:10px ;
          float:left;
          margin-top:65px;
-        width:250px;
+         width:250px;
     }
      section #contenedor #djs #dj2 #imgdj2{
-        background:url(../img/xlarge.jpg);
+         background:url(../img/xlarge.jpg);
          width:85px;
          height:70px;
          float:left;
          background-size: 100% 100%;
          background-repeat:no-repeat;
-        margin-bottom:15px 
+         margin-bottom:15px 
     }
      section #contenedor #djs #dj2 h3{
-        font-size:15px;
+         font-size:15px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
          margin-left:95px;
@@ -3121,10 +3122,10 @@ position: relative;
     }
      section #contenedor #djs #dj3 {
          margin-bottom:95px;
-        width:250px;
+         width:250px;
     }
      section #contenedor #djs #dj3 #imgdj3{
-        background:url(../img/dirty.jpg);
+         background:url(../img/dirty.jpg);
          width:85px;
          height:70px;
          float:left;
@@ -3132,7 +3133,7 @@ position: relative;
          background-repeat:no-repeat;
     }
      section #contenedor #djs #dj3 h3{
-        font-size:15px;
+         font-size:15px;
          font-style:normal;
          color:rgba(255,255,255,0.7) ;
          margin-left:10px;
@@ -3145,7 +3146,7 @@ position: relative;
          display: inline-block;
     }
      footer #redes #rd1, header .redes #rd1{
-        background:url(../img/twit.png);
+         background:url(../img/twit.png);
          width:30px;
          height:30px;
          background-size:100% 100%;
@@ -3153,23 +3154,23 @@ position: relative;
          display: inline-block;
     }
      footer #redes #rd2, header .redes #rd2{
-        background:url(../img/face.png);
+         background:url(../img/face.png);
          width:30px;
          height:30px;
          background-size:100% 100%;
-        margin-right:10px;
+         margin-right:10px;
          display: inline-block;
     }
      footer #redes #rd3, header .redes #rd3{
-        background:url(../img/insta.png);
+         background:url(../img/insta.png);
          width:30px;
          height:30px;
          background-size:100% 100%;
-        margin-right:20px;
+         margin-right:20px;
          display: inline-block;
     }
      footer #copy {
-        display: inline-block;
+         display: inline-block;
          width: 350px;
          position: absolute;
          left: 50%;
@@ -3177,15 +3178,15 @@ position: relative;
          text-align: center;
     }
      footer #copy p {
-        font-size:10px;
+         font-size:10px;
          font-style:normal;
          color:rgba(255,255,255,0.7);
          margin-top:10px;
-        ;
+         ;
          float:left;
     }
      footer #log{
-        background:url(../img/logo.jpg);
+         background:url(../img/logo.jpg);
          width:110px;
          height:30px;
          background-size: 100% 100%;
@@ -3194,3 +3195,4 @@ position: relative;
          top: 20px;
     }
 }
+ 
