@@ -105,8 +105,9 @@
      align-content:space-between !important;
 }
  section {
-     width: 82%;
-     display: inline-block;
+     width: 100%;
+     display: flex;
+     padding-bottom: 25px; 
 }
  section .titulo{
      font-size:25px;
@@ -130,13 +131,23 @@
 }
 .portada .btn{
     margin-bottom: 60px;
-
+    background-color: #531f63;
+    color:  #fff;
+  font-family: 'Ubuntu 700i', sans-serif;
+  font-weight: bold;
 }
  footer {
      width:100%;
      background: rgba(52,0,101,0.8);
      position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     position: relative;
+     padding: 15px;
 }
+
 }
  footer #margen_footer {
      padding: 20px;
@@ -224,11 +235,12 @@
      */
     /* margin-left:20px;
      */
-     width: 100%;
-     display: flex;
-     position: relative;
-     justify-content: space-evenly;
-     align-content: space-around;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-content: space-around;
+    bottom: -272px;
 }
  header .redes #rd1{
      background:url(../img/twit.png);
@@ -472,7 +484,7 @@
      width:250px;
 }
  section #djs #dj3 #imgdj3{
-     background: url(../img/phonics.jpg);
+     background: url(../img/stateofmind.jpg);
      width:85px;
      height:70px;
      float:left;
@@ -486,10 +498,12 @@
      margin-top:25px;
      float:left;
 }
+
  footer #redes {
      width:140px;
      margin-left:20px;
      display: none;
+}
 }
  footer #redes #rd1{
      background:url(../img/twit.png);
@@ -531,17 +545,18 @@
      font-style:normal;
      color:rgba(255,255,255,0.7);
      margin-top:10px;
-     ;
-     float:left;
+     display: flex;
 }
  footer #log{
-     background:url(../img/logo.jpg);
-     width:110px;
-     height:30px;
-     background-size: 100% 100%;
-     position: absolute;
-     right: 20px;
-     top: 20px;
+     background:url(../img/logo-foo.jpg);
+     /* width: auto; */
+     /* height:45px; */
+     /* background-size: 100% 100%; */
+     background-repeat: no-repeat;
+     position: relative;
+     background-position: right;
+     right: 0px;
+     top: 0px;
 }
 /*eventos*/
  #fondoeve {
