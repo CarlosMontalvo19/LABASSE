@@ -6,7 +6,7 @@
 }
  body {
     font-family: 'Ubuntu', sans-serif;
-/*font-family: 'Titillium Web', sans-serif;*/
+font-family: 'Titillium Web', sans-serif;
 }
  #fondohome {
      position: fixed;
@@ -143,19 +143,50 @@
      display: flex;
      justify-content: center;
      align-items: center;
+
      align-content: center;
      position: relative;
      padding: 15px;
 }
 
+footer .formulario{
+    display: flex !important;
+    justify-content: space-around !important;
 }
- footer #margen_footer {
+
+.formulario col {
+display: flex;
+flex-direction: column;
+padding: 5px;
+width: 25%;
+}
+
+ footer .contacto, footer .formulario {
      padding: 20px;
-     display: flex;
+     display: block;
+     flex-direction: column;
      justify-content: space-between;
      align-content: center;
-     width: 100%;
+     width: 50%;
+     color: #fff;
+     font-family: 'Titillium Web', sans-serif;
 }
+
+ footer .contacto img {
+   width: 200px;
+   height: 45px;
+   display: block;
+ }
+
+footer .contacto a {
+  color: #fff;
+     font-family: 'Titillium Web', sans-serif;
+     font-weight: bold;
+     padding:15px;
+     text-decoration: none;
+     display: block;
+ }
+
  .separador {
      clear:both ;
 }
@@ -3197,7 +3228,6 @@
          font-style:normal;
          color:rgba(255,255,255,0.7);
          margin-top:10px;
-         ;
          float:left;
     }
      footer #log{
