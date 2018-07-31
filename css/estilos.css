@@ -354,10 +354,21 @@ footer .contacto a strong{
      background-size:100% 100%;
      display: inline-block;
 }
+
+.cuadros{
+   display: flex;
+   justify-content: space-around;
+   width: 1500px;
+   max-width: 100%;
+
+}
+
  section .cuadro{
      background: #f8f9fad6;
      box-shadow:0px 0px 15px rgba(0,0,0,1);
      transition: all -8.5s;
+     display: flex;
+}
 }
  section .cuadro h2 {
      font-size:15px;
@@ -1925,17 +1936,18 @@ footer .contacto a strong{
  @media only screen and (min-width: 481px) and (max-width: 768px) {
     /*home*/
      body {
-         font-family:Arial, Helvetica, sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+font-family: 'Titillium Web', sans-serif;
     }
      #fondohome {
          width: 100%;
-         height:823px ;
+         height:100vh;
          background:url(../img/dj,-disco-de-vinilo,-mano-168750.jpg) ;
          background-size: cover;
     }
      #fondo1{
          width: 100%;
-         height:823px;
+         height:100vh;
     }
      header {
          width: 19%;
