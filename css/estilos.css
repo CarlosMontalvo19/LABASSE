@@ -113,7 +113,7 @@ font-family: 'Titillium Web', sans-serif;
      font-size:25px;
      font-weight: bold;
      margin-top: 50px;
-     margin-bottom: 0px;
+     margin-bottom: 25px;
     }
 
  section .title-a{
@@ -121,8 +121,9 @@ font-family: 'Titillium Web', sans-serif;
      font-weight: lighter ;
      margin-top: 0;
 }
- .portada{
-    background-image:url('../img/disco-vin.jpg');
+ .portada,
+ .carousel-item{
+    /*background-image:url('../img/disco-vin.jpg');*/
     background-size:100% 100vh; 
     background-position: center;
     width: 100%;
@@ -136,6 +137,10 @@ font-family: 'Titillium Web', sans-serif;
   font-family: 'Ubuntu 700i', sans-serif;
   font-weight: bold;
 }
+
+.carousel-caption{
+    text-align: left !important;
+}
  footer {
      width:100%;
      background: rgba(52,0,101,0.8);
@@ -148,6 +153,7 @@ font-family: 'Titillium Web', sans-serif;
      position: relative;
      padding: 15px;
 }
+
 
 footer .formulario{
     display: flex !important;
@@ -177,7 +183,25 @@ width: 100%;
 position: relative;
 }
 
-.formulario .col .campos {display: flex;margin: 5px;width: 70%;position: relative;justify-content: flex-start;flex-wrap: wrap;}
+.formulario .col .campos {
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+  
+}
+
+.formulario .col .campos-P {
+    display: flex;
+    margin: 5px;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
 
 .formulario .col .campos label {
     display: flex;
@@ -185,27 +209,64 @@ position: relative;
     position: relative;
     align-items:center;
     justify-content: flex-start;
+    width: 70%;
 
 }
 
-.formulario .col .campos input[type=checkbox]#Reclamos {margin-right: 8px;display: inline-block;margin-left: 31px;}
+.formulario .col .row input{
+    display:flex;
+    width: 80%;
+    background: #6c757d69;
+    border-color: #fffafa00;
+    border-radius: 5%;
+    color: #fff;
+}
+.formulario .col .row textarea{
+    background: #6c757d69;
+    border-color: #fffafa00;
+    border-radius: 5%;
+    color: #fff;
 
-.formulario .col .campos input[type=checkbox]#Otros {margin-right: 8px;display: inline-block;margin-left: 14px;}
+}
 
 
-.formulario .col .row input{display:block;width: 80%;background: #6c757d69;border-color: #fffafa00;border-radius: 5%;color: #fff;}
 
-.formulario .col .campos input[type=radio], .formulario .col .campos input[type=checkbox]{margin-right: 8px;
+.formulario .col .campos-P input[type=checkbox]#Otros,
+.formulario .col .campos-P input[type=checkbox]#Comentarios,
+.formulario .col .campos-P input[type=checkbox]#Reclamos,
+.formulario .col .campos-P input[type=checkbox]#Cotizacion  {
+    margin-right: 8px;
+    display: inline-block;
+    margin-left: 0px;
+    width: 13px;
+    max-width: 100%;
+ 
+}
+
+
+
+.formulario .col .campos input[type=radio],
+.formulario .col .campos input[type=checkbox]{
+    margin-right: 8px;
     display: inline-block; 
 }
 
-.formulario .col .campos input[type=radio]#Hombre {margin-right: 8px;display: inline-block;margin-left:  15px;}
+.formulario .col .campos input[type=radio]#Hombre,
+.formulario .col .campos input[type=radio]#Mujer {
+    margin-right: 8px;
+    display: inline-block;
+    margin-left:  0px;
+    width:10%;
+}
 
 .formulario .col .row input[type=submit] {
-
+width: 100px;
 background: #000;
-
 margin-top:  15px;
+padding: 7px;
+text-align: center;
+justify-content: center;
+
 }
 
  footer .contacto, footer .formulario {
@@ -218,6 +279,7 @@ margin-top:  15px;
      color: #fff;
      font-family: 'Titillium Web', sans-serif;
      align-items: flex-end;
+     font-size: 14px;
 }
 
  footer .contacto img {
@@ -361,6 +423,7 @@ footer .contacto a strong{
    width: 1500px;
    max-width: 100%;
 
+
 }
 
  section .cuadro{
@@ -368,10 +431,11 @@ footer .contacto a strong{
      box-shadow:0px 0px 15px rgba(0,0,0,1);
      transition: all -8.5s;
      display: flex;
+        flex-direction: column;
 }
-}
- section .cuadro h2 {
-     font-size:15px;
+
+ section .cuadros .cuadro h2 {
+     font-size:19px;
      font-weight: bold;
      color: rgba(52, 0, 102, 1);
      background:url(../img/vineta1.png);
@@ -381,6 +445,8 @@ footer .contacto a strong{
      margin-top:18px;
      margin-bottom:20px;
      margin-left:11px;
+    font-family: 'Ubuntu', sans-serif;
+      font-weight: '700i';
 }
  section .cuadro h3 {
      font-size:15px;
@@ -404,8 +470,9 @@ footer .contacto a strong{
      transform: scale(1.045,1.045);
 }
  section #ultimos #ult1{
-     width:200px;
-     margin-left:11px;
+     width:100%;
+
+     position: relative;
 }
  section #ultimos #ult1 #imgul1 {
      background:url(../img/Pendulun.jpg);
@@ -426,12 +493,17 @@ footer .contacto a strong{
      font-style:normal;
      margin-left:95px;
 }
+ section #ultimos audio,  section #maratones audio{
+    position: relative;
+    width: 100%;
+}
  section #ultimos #ult1 audio {
      margin-bottom:10px;
 }
  section #ultimos #ult2{
-     width:200px;
-     margin-left:11px;
+  width:100%;
+    
+     position: relative;
 }
  section #ultimos #ult2 #imgul2 {
      background:url(../img/Netsky.png);
@@ -456,8 +528,9 @@ footer .contacto a strong{
      margin-bottom:10px;
 }
  section #ultimos #ult3{
-     width:200px;
-     margin-left:11px;
+     width:100%;
+   
+     position: relative;
      margin-bottom:20px;
 }
  section #ultimos #ult3 #imgul3 {
@@ -543,7 +616,7 @@ footer .contacto a strong{
  section #djs #dj1 {
      margin-bottom:-66px ;
      float:left;
-     width:250px;
+  
 }
  section #djs #dj1 #imgdj1{
      background:url(../img/icicle.jpg);
@@ -564,7 +637,7 @@ footer .contacto a strong{
      margin-bottom:10px ;
      float:left;
      margin-top:65px;
-     width:250px;
+    
 }
  section #djs #dj2 #imgdj2{
      background:url(../img/xlarge.jpg);
@@ -583,7 +656,7 @@ footer .contacto a strong{
 }
  section #djs #dj3 {
      margin-bottom:95px;
-     width:250px;
+   
 }
  section #djs #dj3 #imgdj3{
      background: url(../img/stateofmind.jpg);
@@ -596,9 +669,9 @@ footer .contacto a strong{
  section #djs #dj3 h3{
      font-size:15px;
      font-style:normal;
-     margin-left:10px;
-     margin-top:25px;
-     float:left;
+     /* margin-left:10px; */
+     margin-top: 18px;
+     /* float:left; */
 }
 
  footer #redes {
@@ -2937,7 +3010,7 @@ font-family: 'Titillium Web', sans-serif;
     }
      header {
          width: 15%;
-         background: rgba(0,0,0,0.8);
+        
          display: inline-block;
          vertical-align: top;
     }
@@ -2947,7 +3020,7 @@ font-family: 'Titillium Web', sans-serif;
     }
      footer {
          width: 100%;
-         background: rgba(0,0,0,0.8);
+     
          position: relative;
     }
      footer #margen_footer {
@@ -2979,26 +3052,45 @@ font-family: 'Titillium Web', sans-serif;
      header nav ul li {
          margin-top:70px;
     }
-     header nav ul a {
-         background:url(../img/vineta_03.png);
-         background-repeat:no-repeat;
-         background-position:left;
-         text-decoration:none;
-         color:#43FF24;
-         font-size:14px;
-         padding-left:15px;
-         padding: 10px;
-    }
-     header nav ul li a:hover, header nav ul li a:active {
-         background: rgba(0,0,0,0.9);
-         border-radius:2px;
-    }
+  header nav ul li a {
+     text-decoration:none;
+     font-family: 'UbuntuS 600i', sans-serif;
+     color: #dee2e6;
+     font-size:10px;
+     font-weight: bold;
+     margin:5px;
+     padding: 10px;
+     padding-left: 15px;
+    /* background-color: #212529;
+     */
+     position:relative;
+     width: 100%;
+     justify-content:center;
+     display: block;
+}
+ header nav ul li a:hover, header nav ul li a:active {
+     text-decoration: none;
+     background: rgba(0,0,0,0.9);
+     border-radius: 50px;
+     color: #fff;
+     transition: fade;
+    /* width: 150px;
+     */
+}
      section #contenedor {
          width:1054px;
          margin-bottom:4px;
          margin-left:60px;
          padding:30px 30px 0 30px;
     }
+    .carousel-caption{
+    text-align: left !important;
+    bottom: -5px !important; 
+    padding-top: 20px;
+    padding-bottom: 0px !important; 
+    color: #fff;
+    text-align: center;
+}
      section #contenedor #ultimos{
          width:325px;
          float:left;
@@ -3265,24 +3357,24 @@ font-family: 'Titillium Web', sans-serif;
     }
      footer #redes #rd1, header .redes #rd1{
          background:url(../img/twit.png);
-         width:30px;
-         height:30px;
+         width:19px;
+         height:19px;
          background-size:100% 100%;
          margin-right:10px;
          display: inline-block;
     }
      footer #redes #rd2, header .redes #rd2{
          background:url(../img/face.png);
-         width:30px;
-         height:30px;
+         width:19px;
+         height:19px;
          background-size:100% 100%;
          margin-right:10px;
          display: inline-block;
     }
      footer #redes #rd3, header .redes #rd3{
          background:url(../img/insta.png);
-         width:30px;
-         height:30px;
+         width:19px;
+         height:19px;
          background-size:100% 100%;
          margin-right:20px;
          display: inline-block;
